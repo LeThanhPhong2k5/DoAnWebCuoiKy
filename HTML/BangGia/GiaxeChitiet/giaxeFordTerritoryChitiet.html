@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styleGiaxe/styleGiaxeFord.css">
+    <title>Bảng giá ô tô</title>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#search-car">Tìm mua ô tô</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#table-car">Bảng giá ô tô</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="userName" class="no-wrap"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Đơn xe bạn đã đặt</a>
+                    <div class="dropdown-divider"></div>
+                    <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                  </div>
+                </li>
+                
+              </ul>
+          </div>
+      </nav>
+          <div class="card" style="width: 19rem;height: 15rem;position: relative; top:80px;">
+            <div class="card-header text-white text-center bg-dark">
+              <h6>Bảng giá chi tiết các dòng xe Ford</h6>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Ranger</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Everest</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Territory </a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Transit</a>
+              </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;top: -15rem;">
+              <div class="card-header text-black">
+                <h2>GIÁ XE FORD TERRITORY 2024 LĂN BÁNH KÈM ƯU ĐÃI MỚI NHẤT</h2>
+              </div>
+                <div class="card-body">
+                  <p>Tháng 06/2024, Giá xe Ford Territory được niêm yết từ 799 triệu đồng. Territory 2024 được phân phối gồm 3 phiên 
+                    bản là Trend, Titanium và Titanium X. Xe thuộc phân khúc SUV hạng C (Crossover), cạnh tranh trực tiếp với Honda
+                     CR-V, Mazda CX-5, Mitsubishi Outlander, Hyundai Tucson...</p>
+                    <img src="/Image/xeFordTerritory2024.jpg" class="image-carFordTerritory">
+                    <br>
+                    <br>
+                  <h2 class="text-black">Giá xe Ford Territory 2024</h2>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td><h4 class="text-center">Phiên bản xe</h4></td>
+                            <td><h4 class="text-center">Giá niêm yết</h4></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Territory Trend</td>
+                            <td class="text-center">799.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Territory Titanium</td>
+                            <td class="text-center">889.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Territory Titanium X</td>
+                            <td class="text-center">929.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                 </div>
+                 <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Ford Territory</h2>
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(red).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitanium1.5AT-2024(brown)(2).jpg" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Nâu, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTrend1.5AT-2024(white)(2).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Trend 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTrend1.5AT-2024(black).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Trend 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đen, Máy xăng 1.5L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(brown).jpg" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Nâu, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+                 <br>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh Ford Territory Trend</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr class="table-secondary">
+                            <th class="text-center">Khoản phí</th>
+                            <th class="text-center">Hà Nội(đồng)</th>
+                            <th class="text-center">TP.HCM(đồng)</th>
+                            <th class="text-center">Hà Tĩnh(đồng)</th>
+                            <th class="text-center">Các tỉnh khác(đồng)</th> 
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Giá niêm yết</td>
+                            <td colspan="4" class="text-center">799.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí trước bạ</td>
+                            <td class="text-center">95.880.000</td>
+                            <td class="text-center">79.900.000</td>
+                            <td class="text-center">87.890.000</td>
+                            <td class="text-center">79.900.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí đăng kiểm</td>
+                            <td colspan="4" class="text-center">340.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                            <td colspan="4" class="text-center">1.560.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                            <td colspan="4" class="text-center">480.700</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí biển số</td>
+                            <td colspan="2" class="text-center">20.000.000</td>
+                            <td colspan="2" class="text-center">1.000.000</td>
+                          </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                              <th class="text-center">Giá lăn bánh tạm tính</th>
+                              <th class="text-center">917.260.700</th>
+                              <th class="text-center">901.280.700</th>
+                              <th class="text-center">890.270.700</th>
+                              <th class="text-center">882.280.700</th>
+                            </tr>
+                          </thead>
+                      </table>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh Ford Territory Titanium</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Hà Tĩnh(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="4" class="text-center">889.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">106.680.000</td>
+                          <td class="text-center">88.900.000</td>
+                          <td class="text-center">97.790.000</td>
+                          <td class="text-center">88.900.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="4" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="4" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="4" class="text-center">480.700</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td colspan="2" class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.018.060.700</th>
+                            <th class="text-center">1.000.280.700</th>
+                            <th class="text-center">990.170.700</th>
+                            <th class="text-center">981.280.700</th>
+                          </tr>
+                        </thead>
+                    </table>
+                  </div>  
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh Ford Territory Titanium X</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Hà Tĩnh(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="4" class="text-center">929.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">111.480.000</td>
+                          <td class="text-center">92.900.000</td>
+                          <td class="text-center">102.190.000</td>
+                          <td class="text-center">92.900.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">480.700</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td colspan="2" class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.062.860.700</th>
+                            <th class="text-center">1.044.280.700</th>
+                            <th class="text-center">1.034.570.700</th>
+                            <th class="text-center">1.025.280.700</th>
+                        </thead>
+                    </table>
+                  </div> 
+                  <h3 class="text-black">Thông số Ford Territory 2024</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Thông số</th>
+                          <th colspan="4" class="text-center">Ford Territory 2024</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá từ</td>
+                          <td colspan="4" class="text-center">799 triệu VND</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Kiểu dáng</td>
+                          <td colspan="4" class="text-center">SUV-C</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Số chỗ ngồi</td>
+                          <td colspan="4" class="text-center">5</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Xuất xứ</td>
+                          <td colspan="4" class="text-center">Lắp ráp tại Việt Nam</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Dài x Rộng x Cao</td>
+                          <td colspan="4" class="text-center">4630 x 1935 x 1706 mm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Khoảng sáng gầm xe</td>
+                          <td colspan="4" class="text-center">190 mm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Chiều dài cơ sở</td>
+                          <td colspan="4" class="text-center">2726 mm</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Ngoại thất</h3>
+                  <p>Ford Territory 2024 được áp dụng triết lý thiết kế “Sức mạnh của Dòng chảy Năng lượng không ngừng" mới nhất của Ford toàn cầu. Ngoại 
+                    thất của Territory bóng bẩy, có sự trau chuốt ở từng nét trên thân xe.</p>
+                    <img src="/Image/xeFordTerritory2024(2).jpg" class="image-carFordTerritory">
+                    <br>
+                    <br>
+                  <p>Nhắm đến những khách hàng gia đình trẻ, năng động, Territory phần nào thành công ở yếu tố ngoại hình, bởi sự phù hợp với tập khách hàng mục tiêu.</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Thông số</th>
+                          <th class="text-center">Territory Trend</th>
+                          <th class="text-center">Territory Titanium</th>
+                          <th class="text-center">Territory Titanium X</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Đèn pha trước</td>
+                          <td class="text-center">Full LED</td>
+                          <td colspan="2" class="text-center">Full LED / Auto Hight Beam</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Gạt mưa tự động</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Đèn sương mù</td>
+                          <td colspan="4" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Gương chiếu hậu</td>
+                          <td class="text-center">Gập điện</td>
+                          <td colspan="2" class="text-center">Gập điện / sấy kính</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Cửa sổ trời</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có / Panorama</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Mở cốp rảnh tay / cốp điện / đá chân mở cốp</td>
+                          <td colspan="2" class="text-center">Không</td>
+                          <td class="text-center">Có</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Nội thất</h3>
+                  <p>Nội thất Territory được thiết kế kiểu sang trọng.</p>
+                    <img src="/Image/noithat-FordTerritory2024.jpg" class="image-carFordTerritory">
+                    <br>
+                    <br>
+                  <p>Một số trang bị đáng chú ý như cặp màn hình 12 inch, đề nó bằng nút bấm, điều hòa tự động 2 vùng, núm xoay chuyển số, sạc không dây, phanh 
+                    điện tử, gương chống chọi tự động và cửa sổ trời toàn cảnh.
+                  </p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Trang bị nội thất</th>
+                          <th class="text-center">Territory Trend</th>
+                          <th class="text-center">Territory Titanium</th>
+                          <th class="text-center">Territory Titanium X</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Màn hình hiển thị đa thông tin</td>
+                          <td colspan="2" class="text-center">Đồng hồ lái xe 7 inch</td>
+                          <td class="text-center">Đồng hồ lái xe 12 inch</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Màn hình giải trí</td>
+                          <td colspan="3" class="text-center">Màn hình giải trí 12 inch</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Kết nối Appler Carplay / Android Auto</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Sạc không dây</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Khởi động bằng nút bấm</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Chìa khóa thông minh SmartKey</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Điều hòa nhiệt độ</td>
+                          <td colspan="3" class="text-center">tự động 2 vùng khí hậu / cửa gió điều hòa sau</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Lọc không khí tiêu chuẩn PM2.5</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Vật liệu ghế</td>
+                          <td class="text-center">ghế da</td>
+                          <td class="text-center">ghế da cao cấp</td>
+                          <td class="text-center">ghế da cao cấp<br> có làm mát hàng ghế trước</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Ghế lái chính diện</td>
+                          <td colspan="3" class="text-center">10 hướng</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Cửa kính điều khiển 1 chạm</td>
+                          <td class="text-center">Bên lái</td>
+                          <td colspan="2" class="text-center">Tất cả</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống âm thanh</td>
+                          <td class="text-center">6 loa</td>
+                          <td colspan="2" class="text-center">8 loa</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">An toàn và An ninh</h3>
+                  <p>Nhiều tính năng an toàn tiên tiến như hỗ trợ phanh khẩn cấp, cảnh báo điểm mù, cảnh báo làn đường, giữ làn đường, ga tự động
+                     thích ứng và đèn pha tự động. Ngoài ra, mẫu xe này còn có kiểm soát áp suất lốp, hỗ trợ đỗ xe tự động, camera 360 độ và 6 túi khí</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Trang bị an toàn</th>
+                          <th class="text-center">Territory Trend</th>
+                          <th class="text-center">Territory Titanium</th>
+                          <th class="text-center">Territory Titanium X</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Túi khí</td>
+                          <td class="text-center">4 túi khí</td>
+                          <td colspan="2" class="text-center">6 túi khí</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Camera lùi</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Cảm biến hỗ trợ đỗ xe</td>
+                          <td class="text-center">Cảm biến sau</td>
+                          <td colspan="2" class="text-center">Cảm biến trước / sau</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Camera 360</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hỗ trợ đỗ xe tự động (lùi chuồng, ghép song song)</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Chống bó cứng / phân phối lực phanh điện tử(ABS/EBD)</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Cân bằng điện tử ESP</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hỗ trợ khởi hành ngang dốc</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hỗ trợ đỗ đèo</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống kiểm soát tốc độ / Cruise control</td>
+                          <td class="text-center">Có</td>
+                          <td colspan="2" class="text-center">Kiếm soát hành trình thích ứng với dừng và đỗ</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hỗ trợ phanh khẩn cấp khi gạp chướng ngại vật phía trước</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống cảnh báo điểm mù kết hợp xe cắt ngang</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống cảnh báo lệch làn</td>
+                          <td class="text-center">Không</td>
+                          <td colspan="2" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống kiểm soát áp suất lốp</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ thống chống trộm</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Động cơ</h3>
+                  <p>Xe sử dụng động cơ do liên doanh của Ford tại Trung Quốc sản xuất. Máy 1.5L tăng áp có công suất 160 mã lực, mô-men xoắn 248 Nm, 
+                    kết hợp số tự động 7 cấp và dẫn động cầu trước.</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Thông số động cơ vận hành</th>
+                          <th class="text-center">Territory Trend</th>
+                          <th class="text-center">Territory Titanium</th>
+                          <th class="text-center">Territory Titanium X</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Động cơ</td>
+                          <td colspan="3" class="text-center">Xăng tăng áp 1.5L Ecoboost i4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Công suất cực đại</td>
+                          <td colspan="3" class="text-center">160ps / 5400-5700rpm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Mô men xoắn</td>
+                          <td colspan="3" class="text-center">248nm / 1500-3500rpm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hộp số</td>
+                          <td colspan="3" class="text-center">Tự động 7 cấp, chuyển số điện tử núm xoay</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phanh tay điện tử / Auto Hold</td>
+                          <td colspan="3" class="text-center">Có</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Trợ lục lái</td>
+                          <td colspan="3" class="text-center">Trợ lực lái điện</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Hệ thống treo/phanh</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Thông số treo/phanh</th>
+                          <th class="text-center">Territory Trend</th>
+                          <th class="text-center">Territory Titanium</th>
+                          <th class="text-center">Territory Titanium X</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Trèo trước</td>
+                          <td colspan="3" class="text-center">Hệ thống treo độc lập, lo xo trụ, thanh cân bằng, giảm chấn thủy lực</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Treo sau</td>
+                          <td colspan="3" class="text-center">Hệ thống treo sau độc lập đa liên kết</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phanh trước / sau</td>
+                          <td colspan="3" class="text-center">Phanh đĩa</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Ưu điểm và nhược điểm xe Ford Territory</h3>
+                      <p>Ưu điểm</p>
+                        <ul>
+                          <li>Thiết kế đẹp, bắt mắt</li>
+                          <li>Giá cả hợp lý</li>
+                          <li>Nhiều trang bị tiện ích cao cấp</li>
+                          <li>Trang bị an toàn đầy đủ</li>
+                          <li>Có hỗ trợ đỗ xe tự động</li>
+                        </ul>  
+                        <p>Nhược điểm</p>
+                        <ul>
+                          <li>Hệ thống treo khá mềm. Xe bị bồng bềnh khi di chuyển cao tốc hay đường quanh co, đồi núi</li>
+                          <li>Động cơ được phát triển từ trung quốc</li>
+                        </ul> 
+                        <p>Ford Territory được mong chờ tạo nên sự bùng nổ trong phân khúc SUV hạng C nhờ mức giá tương đương với các mẫu SUV hạng B bản cao cấp, tiện nghi
+                           cao về nội thất và thiết kế đẹp. Với rất nhiều những ưu điểm, Ford Territory 2024 là một dòng xe bạn rất nên sở hữu. Nếu bạn muốn mua 1 chiếc xe 
+                           tiện nghi, rộng rãi và vận hành mạnh mẽ thì hãy thử lựa chọn Ford Territory 2024.</p>
+                </div>
+                <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Ford Territory</h2>
+                  </div>
+                  <div id="carouselExampleIndicators-1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(red).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitanium1.5AT-2024(brown)(2).jpg" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Nâu, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTrend1.5AT-2024(white)(2).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Trend 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTrend1.5AT-2024(black).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Trend 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đen, Máy xăng 1.5L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(brown).jpg" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Nâu, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordTerritoryTitaniumX1.5AT-2024(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Territory Titanium X 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;">
+              <div class="card" style="width: 72rem;">
+                <h5 class="card-header text-white bg-dark">Từ khóa liên quan</h5>
+                <div class="card-body">
+                  <ul class="key-word">
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html">Giá xe Audi A4</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html">Giá xe Audi A6</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html">Giá xe Audi A7</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html">Giá xe Audi A8</a></li>
+                 </ul>
+                 <ul class="key-word">
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html">Giá xe BMW X4</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html">Giá xe BMW X5</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html">Giá xe BMW X6</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html">Giá xe BMW X7</a></li>
+                 </ul>
+                 <ul class="key-word">
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html">Giá xe Ford Everest</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html">Giá xe Ford Ranger</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html">Giá xe Ford Territory</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html">Giá xe Ford Transit</a></li>
+                </ul>
+                <ul class="key-word">
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCityChitiet.html">Giá xe Honda City</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCivicChitiet.html">Giá xe Honda Civic</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html">Giá xe Honda CRV</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaHRVChitiet.html">Giá xe Honda HRV</a></li>
+              </ul>
+                </div>
+              </div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/HTML/index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bảo mật</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+
+    <!-- Hide Navbar -->
+    <script>
+      $(document).ready(function() {
+          var previousScroll = 0;
+          $(window).scroll(function() {
+              var currentScroll = $(this).scrollTop();
+              if (currentScroll > previousScroll) {
+                  $(".navbar").slideUp();
+              } else {
+                  $(".navbar").slideDown();
+              }
+              previousScroll = currentScroll;
+          });
+      });
+      </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    margin: 0 1em;
+    width: calc(100%/3);
+}
+
+.image-wrapper img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.image-wrapper {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-carFordRanger {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carFordEverest {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carFordExplorer{
+    margin-left: 10rem;
+    width: 50rem;                    
+}
+
+.image-carFordTerritory{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carFordTransit {
+    margin-left: 10rem;
+    width: 50rem;            
+}       
+
+.image-carFordTourneo {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carFordEcosport {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+/* Từ khóa liên quan */
+
+.key-word {
+    display: table; 
+    width: 100%; 
+    border-collapse: collapse;
+    position:relative;
+    left: 40px;
+}
+
+.key-word li {
+    display: table-cell; 
+    padding: 10px; 
+    border: none;
+}
+
+.key-word a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Chặn xuống dòng */
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* dropdown logout */
+
+.dropdown-menu {
+    position: absolute;
+    right:0px;
+    top: 47px;
+    border-radius:0;
+}

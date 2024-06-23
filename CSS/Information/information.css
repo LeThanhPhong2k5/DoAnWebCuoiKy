@@ -1,0 +1,82 @@
+body {
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+/* Chặn xuống dòng */
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* dropdown logout */
+
+.dropdown-menu {
+    position: absolute;
+    right:0px;
+    top: 47px;
+    border-radius:0;
+}
+
+.contain-input {
+    width: 100%;
+}
+  
+.table {
+    width: 100%;
+    padding: 10px;
+}
+
+td {
+    padding: 5px; 
+    vertical-align: top; 
+    width: 10%;
+}
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    margin-bottom: 5px;
+}
+  
+.form-group input,
+.form-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 99%;
+}
+
+.form-group-address input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200%;
+}
+.form-group-email input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200%;
+}
+
+.form-group-name input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200%;
+}

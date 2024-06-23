@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styleGiaxe/styleGiaxeAudi.css">
+    <title>Bảng giá ô tô</title>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#search-car">Tìm mua ô tô</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#table-car">Bảng giá ô tô</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="userName" class="no-wrap"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Đơn xe bạn đã đặt</a>
+                    <div class="dropdown-divider"></div>
+                    <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                  </div>
+                </li>
+              </ul>
+          </div>
+      </nav>
+          <div class="card" style="width: 19rem;height: 15rem;position: relative; top:80px;">
+            <div class="card-header text-white text-center bg-black">
+              <h6>Bảng giá chi tiết các dòng xe Audi</h6>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html" class="list-group-item list-group-item-action ">Giá xe Audi A4</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html" class="list-group-item list-group-item-action ">Giá xe Audi A6</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html" class="list-group-item list-group-item-action ">Giá xe Audi A7</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html" class="list-group-item list-group-item-action ">Giá xe Audi A8</a>
+              </div>
+            </div>
+          <div class="card" style="width: 75rem;position: relative;left: 20rem;top: -15rem;">
+            <div class="card-header text-black">
+              <h2>GIÁ BÁN Ô TÔ AUDI</h2>
+            </div>
+              <div class="card-body">
+                <p>Audi là thương hiệu xe hơi hạng sang đến từ Đức, đã và đang được ưa chuộng tại thị trường Việt Nam. Hiện nay, Audi Việt Nam 
+                   có 3 đại lý tại Hà Nội, Hồ Chí Minh City và Đà Nẵng. 
+                   Giá bán của các dòng xe đang được bán ở Việt Nam cập nhật mới nhất như sau.</p>
+                <h2>Giá xe Audi hiện tại</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Loại xe Audi</th>
+                        <th scope="col-5">Giá thành hiện tại</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Audi A4</td>
+                        <td>1.710.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Audi A6</td>    
+                        <td>2.520.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Audi A7</td>
+                        <td>3.720.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Audi A8</td>
+                        <td>5.220.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Audi Q3</td>
+                        <td>1.840.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Audi Q5</td>
+                        <td>2.410.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Audi Q7</td>
+                        <td>3.500.000.000 VND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Audi Q8</td>
+                        <td>4.350.000.000 VND</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+               </div>
+               <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                <div class="card-header bg-black">
+                  <h2 style="color: white">Tin bán xe Audi</h2>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA645.jpg" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A6 45 TFSI-2022</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ745.jpg" style="width: 300px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q7 45 TFSI Quatro - 2021</h5>
+                            <p class="card-text">Nhập khẩu, Xanh, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA6452022.jpg">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A6 45 TFSI -2022</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ8E.avif" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q8 Etron - 2024</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Xe điện, Số tự động,...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA745.jpg" style="height: 180px;width: 300px">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A7 45 TFSI - 2024</h5>
+                            <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ335.jpg" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q3 35 TFSI -2023</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 1.4L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA8L55.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Audi A8 L 55 TFSI Quattro - 2022</h5>
+                              <p class="card-text">Nhập khẩu, Xanh, Máy xăng 3.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA645TFSI.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Audi A6 45 TFSI - 2023</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+               </div>
+               <br>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi A4</h2>
+              </div>
+              <div class="card-body">
+                <p>Để không thua thiệt trong cuộc đua với các đối thủ khác cùng phân khúc sedan hạng sang là Mercedes C-class và BMW 3-Series, Audi đã cho 
+                  ra mắt mẫu xe A4 2022 với nhiều thay đổi đáng kể. Thiết kế trau chuốt, không gian nội thất rộng hơn trong dáng vẻ thể thao cùng màn hình 
+                  cảm ứng, Audi A4 gần như là chiếc xe dẫn đầu công nghệ. Dáng vẻ thể thao song hành cùng động cơ xăng mild hybrid, Audi A4 mới mang lại cảm
+                   giác lái thú vị với cả hai phiên bản: dẫn động cầu trước và quattro.</p>
+                <img src="/Image/xeAudiA4_image2.jpg" class="image-carAudiA4">
+                <br>
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi A4: 1.710.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi A6</h2>
+              </div>
+              <div class="card-body">
+                <p>Tại triển lãm ô tô Geneva Motor Show, các gian hàng xe đến từ Đức luôn thu hút sự quan tâm hơn cả bởi sự cuốn hút trong 
+                  từng thiết kế đến khả năng hấp dẫn của các tiện ích được trang bị trong các dòng xe. Một trong những mẫu xe đó phải kể 
+                  đến là Audi A6 thế hệ mới. V</p>
+                <p>Audi A6 thế hệ mới được thay đổi trước hết về thiết kế một cách toàn diện, theo ngôn ngữ mới được Audi phát triển trên mẫu A7 
+                  và A8 thế hệ mới đã giới thiệu trước đó. Audi A6 2022 chính là một trong những lựa chọn hàng đầu với những khách hàng có nhu cầu 
+                  về một mẫu sẽ sedan hàng sang. Với thiết kế mới ấn tượng mạnh mẽ về tính thẩm mỹ và hiện đại cùng hàng loạt công nhệ mới kết hợp 
+                  cùng hệ chuyển động Hybrid hứa hẹn mẫu xe sẽ làm cho các đối thủ lớn như Mercedes Benz E-Class, BMW 5 Series phải dè chừng.</p>
+                <img src="/Image/xeAudiA6_image2.webp" class="image-carAudiA6">
+                <br>
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi A6 45 TFSI: 2.520.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi A7</h2>
+              </div>
+              <div class="card-body">
+                <p>Đầu tháng 10/2018 đánh dấu sự xuất hiện đầu tiên của Audi A7 Sportback thế hệ mới tại thị trường Đông Nam Á. Nhưng đến Vietnam Motor Show 
+                  2018 người tiêu dùng Việt Nam mới được thực sự trải nghiệm những chiếc xe đầu tiên của hãng. Mang phong cách từ mẫu Prologue Concept cùng 
+                  với nhiều tiện ích hiện đại được trang bị, mẫu A7 thế hệ mới trở thành một trong những đối thủ nặng ký trong cuộc đua dành thị phần các ông 
+                  lớn khác như Mercedes Benz CLS hay BMW 6 Series.</p>
+                <p>Mẫu xe Audi A7 Sportback mới là một đại sứ tiên phong trong cuộc cách mạng về ngôn ngữ thiết kế, trong khi đó vẫn giữ gìn được đặc tính 
+                  quattro truyền thống.</p>
+                <img src="/Image/xeAudiA7_image2.jpg" class="image-carAudiA7">
+                <br>
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi A7 55 TFSI: 3.720.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi A8L</h2>
+              </div>
+              <div class="card-body">
+                <p>Trong phân khúc thị trường ô tô sang ở Việt Nam cũng như trên thế giới ta luôn thấy cuộc cạnh tranh giữa những hãng xe lớn như Audi, BMW, Mercedes Benz, Lexus hay Jaguar. 
+                  Nhận thấy được thị phần tiềm năng tại phân khúc này, Audi đã tung ra mẫu xe A8 phiên bản hoàn toàn mớ, được nâng cấp toàn diện nhằm tăng sức cạnh với các đối thủ trong cùng
+                   phân khúc sedan hạng sang cỡ lớn với các đối thủ Mercedes S-Class , BMW 7 Seriess hay Lexus.<br>Audi A8 thế hệ mới chính là lời khẳng định vị thế hàng đầu của Audi trong phân khúc xe 
+                   sedan hạng sang.</p>
+                <p>Mẫu xe được trang bị động cơ V6 TFSI 3.0L kết hợp hệ thống mild-hybrid 48V cho công suất tối đa 340 mã lực với mô men xoắn cực đại 500 Nm. Sự kết hợp với hệ dẫn động 4 bánh toàn thời 
+                  gian Quattro hộp số tự động 8 cấp Tiptronic giúp cho người sử có nhưng trải nghiệm lái cực thú vị với Audi A8 thế hệ mới này.</p>
+                <img src="/Image/xeAudiA8_image2.jpg" class="image-carAudiA8">
+                <br>
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi A8L 55 : 5.220.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi Q3</h2>
+              </div>
+              <div class="card-body">
+                <p>Được ra mắt lần đầu vào năm 2011, Audi Q3 là một trong những thế hệ xe mới của Audi. Q3 là dòng xe nằm trong phân khúc xe SUV hạng sang cỡ nhỏ, xe sở hữu kích thước nhỏ gọn giúp linh 
+                  hoạt trong đường phố đông đúc nhưng vẫn đáp ứng tốt không gian sử dụng cho gia đình nhỏ. Hiện nay, mẫu Q3 được rao bán trên thị trường chính là thế hệ mới nhất của dòng xe. Với nhiều 
+                  cải tiến trong thiết kế cũng như là các tiện ích được trang bị, mẫu xe hứa hẹn là một trong những đối thủ nặng ký của  Mercedes GLA hay BMW X1.</p>
+                <p>Audi Q3 2023 thế hệ mới được đánh giá là phiên bản “mini” Q8 bởi ngoại thất của xe có nhiều điểm tương đồng với mẫu xe đàn anh. Mẫu xe ra bán thị trường với 2 phiên bản 35 TFSI thường
+                  và 35 TFSI Sportback tương ứng với đó là các tùy chọn gói thể thao S-line hoặc Advanced và S-line.</p>
+                <img src="/Image/xeAudiQ3_image2.avif" class="image-carAudiQ3">
+                <br>
+                <br>
+                <p>Với nhiều tùy chọn và được chào bán ở mức giá khá cạnh tranh, Q3 thế hệ mới là một trong những phương án được cân nhắc hàng đầu của khách hàng khi có nhu cầu về dòng xe SUV hạng sang cỡ nhỏ.</p>
+                <br>
+                <p>Giá bán hiện tại của xe Audi Q3 35 TFSI: 1.840.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi Q5</h2>
+              </div>
+              <div class="card-body">
+                <p>Mẫu xe Q5 2023 được Audi sản xuất và tung ra thị trường nhắm thẳng đích đến là phân khúc dòng xe SUV đa dụng cỡ nhỏ. Tại phiên bản mới nhất này, Audi A5 có đôi chút về kích thước chiều dài và 
+                  giảm khối lượng của xe với kích thước của chiều dài, rộng, cao lần lượt là 4663 x 1893 x 1659 mm.</p>
+                <p>Tinh tế và hiện đại chính là những từ ngữ dùng để mô tả nội thất của Q5 thế hệ mới. Mẫu xe có nhiều tùy chọn màu sắc và chất liệu khác nhau để khách hàng có thể lựa chọn cho mình một chiếc xe 
+                  ưng ý, đặc trưng và không đại trà. Với những ưu thế vượt trội được trang bị, Audi Q5 thế hệ mới hứa hẹn xe làm cuộc cạnh tranh giữa các dòng xe trong phân khúc SUV hạng sang cỡ trung.</p>
+                <img src="/Image/xeAudiQ5_image2.jpg" class="image-carAudiQ5">
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi Q5 45 Sline: 1.900.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi Q7</h2>
+              </div>
+              <div class="card-body">
+                <p>Luôn là một trong những thương hiệu xe đầu trong cuộc cạnh tranh giành thị phần, Audi không ngừng tung ra thị trường các mẫu xe chiếm trọn lòng tin của khách hàng từ thiết kế ngoại thất đến các 
+                  tiện ích được trang bị. Xuất hiện lần đầu thị trường vào năm 2005, Audi Q7 luôn không ngưng được cái tiến để tăng sức cạnh tranh trong cuộc đua thị phần khốc liệt. Audi Q7 2022 là phiên bản facelift
+                   của SUV cỡ vừa thế hệ thứ hai đến từ thương hiệu Audi.</p>
+                <img src="/Image/xeAudiQ7_image2.jpg" class="image-carAudiQ7">
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi Q7 45 TFSI Quattro: 3.500.000.000 đồng</p>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe Audi Q8</h2>
+              </div>
+              <div class="card-body">
+                <p>Thành viên mới của gia đình Q, Audi Q8 là mẫu xe thuộc phân khúc full-size luxury sport SUV mới nhất mà Audi tung ra thị trường. Sử dụng chung hệ thống khung gầm với Urus của Lamborghini 
+                  hay Cayenne của Porsche... Q8 chính là một lời khẳng định chắc nịnh của Audi về vị thế, thị phần trong cuộc cạnh trạnh khốc liệt trên thị trường xe hiện tại.</p>
+                  <p>Audi Q8 2023 kết hợp sự sang trọng gọn gàng của một chiếc coupé 4 cửa với tính linh hoạt thực tế của một chiếc SUV cỡ lớn, theo kèm đó là những trang bị đầy đủ 
+                    và khỏe khoắn trong cả điều kiện địa hình off-road. Thiết kế ngoại thất đầy cảm xúc với lưới tản nhiệt khung đơn dạng lớn cùng nhiều tính năng từ chiếc Audi quattro 
+                    nguyên bản. Trong khí đó, nội thất trang nhã, thanh lịch, màn hình cảm ứng và hệ thống định vị hiện đại. Có thể khẳng định Audi Q8 là người bạn đồng hành hoàn hảo để 
+                    sử dụng cho công việc và giải trí cho đối tượng khách hàng cao cấp.</p>
+                <img src="/Image/xeAudiQ8_image2.webp" class="image-carAudiQ8">
+                <br>
+                <br>
+                <p>Giá bán hiện tại của xe Audi Q8 55 TFSI Quattro: 4.350.000.000 đồng</p>
+              </div>
+              <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                <div class="card-header bg-black">
+                  <h2 style="color: white">Tin bán xe Audi</h2>
+                </div>
+                <div id="carouselExampleIndicators-1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA645.jpg" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A6 45 TFSI-2022</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ745.jpg" style="width: 300px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q7 45 TFSI Quatro - 2021</h5>
+                            <p class="card-text">Nhập khẩu, Xanh, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA6452022.jpg">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A6 45 TFSI -2022</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ8E.avif" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q8 Etron - 2024</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Xe điện, Số tự động,...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiA745.jpg" style="height: 180px;width: 300px">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A7 45 TFSI - 2024</h5>
+                            <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeAudiQ335.jpg" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Audi Q3 35 TFSI -2023</h5>
+                            <p class="card-text">Nhập khẩu, Xám, Máy xăng 1.4L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA8L55.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Audi A8 L 55 TFSI Quattro - 2022</h5>
+                              <p class="card-text">Nhập khẩu, Xanh, Máy xăng 3.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA645TFSI.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Audi A6 45 TFSI - 2023</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+               </div>
+          </div>
+          <br>
+
+          <div class="card" style="width: 75rem;position: relative;left: 20rem;padding: 5px;">
+            <div class="card" style="width: 72rem;">
+              <h5 class="card-header text-white bg-dark">Từ khóa liên quan</h5>
+              <div class="card-body">
+                <ul class="key-word">
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html">Giá xe Audi A4</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html">Giá xe Audi A6</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html">Giá xe Audi A7</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html">Giá xe Audi A8</a></li>
+               </ul>
+               <ul class="key-word">
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html">Giá xe BMW X4</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html">Giá xe BMW X5</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html">Giá xe BMW X6</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html">Giá xe BMW X7</a></li>
+               </ul>
+               <ul class="key-word">
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html">Giá xe Ford Everest</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html">Giá xe Ford Ranger</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html">Giá xe Ford Territory</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html">Giá xe Ford Transit</a></li>
+              </ul>
+              <ul class="key-word">
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCityChitiet.html">Giá xe Honda City</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCivicChitiet.html">Giá xe Honda Civic</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html">Giá xe Honda CRV</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaHRVChitiet.html">Giá xe Honda HRV</a></li>
+            </ul>
+              </div>
+            </div>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bảo mật</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+
+    <!-- Hide Navbar -->
+    <script>
+      $(document).ready(function() {
+          var previousScroll = 0;
+          $(window).scroll(function() {
+              var currentScroll = $(this).scrollTop();
+              if (currentScroll > previousScroll) {
+                  $(".navbar").slideUp();
+              } else {
+                  $(".navbar").slideDown();
+              }
+              previousScroll = currentScroll;
+          });
+      });
+      </script>
+
+</body>
+</html>

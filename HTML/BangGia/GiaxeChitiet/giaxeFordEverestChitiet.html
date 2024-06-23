@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styleGiaxe/styleGiaxeFord.css">
+    <title>Bảng giá ô tô</title>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#search-car">Tìm mua ô tô</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#table-car">Bảng giá ô tô</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="userName" class="no-wrap"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Đơn xe bạn đã đặt</a>
+                    <div class="dropdown-divider"></div>
+                    <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                  </div>
+                </li>  
+              </ul>
+          </div>
+      </nav>
+          <div class="card" style="width: 19rem;height: 15rem;position: relative; top:80px;">
+            <div class="card-header text-white text-center bg-dark">
+              <h6>Bảng giá chi tiết các dòng xe Ford</h6>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Ranger</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Everest</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html" class="list-group-item list-group-item-action">Giá xe Ford Territory </a>
+                <a href="" class="list-group-item list-group-item-action">Giá xe Ford Transit</a>
+              </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;top: -15rem;">
+              <div class="card-header text-black">
+                <h2>GIÁ XE FORD EVEREST 2024 LĂN BÁNH KÈM ƯU ĐÃI MỚI NHẤT</h2>
+              </div>
+                <div class="card-body">
+                  <p>Tháng 06/2024, Giá xe Ford Everest 2024 được niêm yết từ 1,099 - 1,999 tỷ đồng. Ford Everest mới chính thức ra mắt
+                     khách Việt với 5 phiên bản và 7 màu tùy chọn. Ở thế hệ mới nhất, Everest 2024 có sự đổi mới hoàn toàn về thiết kế 
+                     ngoại thất cho đến nội thất và thêm một vài tính năng mới.</p>
+                    <img src="/Image/xeFordEverest2024.jpg" class="image-carFordEverest">
+                    <br>
+                    <br>
+                  <h2 class="text-black">Giá xe Ford Everest 2024</h2>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td><h4 class="text-center">Phiên bản xe</h4></td>
+                            <td><h4 class="text-center">Giá niêm yết</h4></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Ambiente 2.0L AT 4x2 AT</td>
+                            <td class="text-center">1.099.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Sport 2.0L AT 4x4 AT</td>
+                            <td class="text-center">1.178.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Titanium 2.0L 4x2 AT</td>
+                            <td class="text-center">1.299.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Titanium 2.0L 4x4 AT</td>
+                            <td class="text-center">1.468.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Wildtrak 2.0L 4x4 AT</td>
+                            <td class="text-center">1.499.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ford Everest Platinum 2.0L 4x4 AT</td>
+                            <td class="text-center">1.545.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  <p>* Giá xe tăng thêm 7 triệu đồng cho lựa chọn ngoại thất màu trắng tuyết hoặc đỏ cam. Giá xe tăng thêm 
+                    7 triệu đồng cho lựa chọn nội thất màu nâu hạt dẻ. Giá tăng thêm 14 triệu đồng cho lựa chọn ngoại thất 
+                    màu trắng tuyết hoặc đỏ cam + nội thất da màu nâu hạt dẻ.</p>
+                 </div>
+                 <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Ford Everest</h2>
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestTitaniumPlus2.0L4x4AT- 2024(white)..webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Titanium Plus 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestSport2.0L4x2AT-2024(white).jpg" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Sport 2.0L 4x2 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestTitanium2.0L4x2AT- 2024(black).jpg">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Titanium 2.0L 4x2 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đen, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Long An]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestPlatinum2.0L4x4AT-2024(black).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Platinum 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đen, Máy dầu 2.0L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestWildtrak2.0L4x4AT-2024(orange).webp" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Wildtrak 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Cam, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestAmbiente2.0L4x2AT-2023(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Ambiente 2.0L 4x2 AT - 2023</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+                 <br>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Ambiente 2.0L AT 4x2 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr class="table-secondary">
+                            <th class="text-center">Khoản phí</th>
+                            <th class="text-center">Hà Nội(đồng)</th>
+                            <th class="text-center">TP.HCM(đồng)</th>
+                            <th class="text-center">Các tỉnh khác(đồng)</th> 
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Giá niêm yết</td>
+                            <td colspan="3" class="text-center">1.099.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí trước bạ</td>
+                            <td class="text-center">131.880.000</td>
+                            <td colspan="2" class="text-center">109.900.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí đăng kiểm</td>
+                            <td colspan="3" class="text-center">340.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                            <td colspan="3" class="text-center">1.560.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                            <td colspan="3" class="text-center">873.400</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Phí biển số</td>
+                            <td colspan="2" class="text-center">20.000.000</td>
+                            <td class="text-center">1.000.000</td>
+                          </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                              <th class="text-center">Giá lăn bánh tạm tính</th>
+                              <th class="text-center">1.253.653.400</th>
+                              <th class="text-center">1.231.673.400</th>
+                              <th class="text-center">1.212.673.400</th>
+                            </tr>
+                          </thead>
+                      </table>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Sport 2.0L AT 4x2 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="3" class="text-center">1.178.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">141.360.000</td>
+                          <td colspan="2" class="text-center">117.800.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">873.400</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.342.133.400</th>
+                            <th class="text-center">1.318.573.400</th>
+                            <th class="text-center">1.299.573.400</th>
+                          </tr>
+                        </thead>
+                    </table>
+                  </div>  
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Titanium 2.0L AT 4x2 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="3" class="text-center">1.299.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">154.320.000</td>
+                          <td colspan="2" class="text-center">129.900.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">873.400</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.477.653.400</th>
+                            <th class="text-center">1.451.673.400</th>
+                            <th class="text-center">1.432.673.400</th>
+                        </thead>
+                    </table>
+                  </div>  
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Titanium 2.0L AT 4x4 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="3" class="text-center">1.452.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">176.160.000</td>
+                          <td colspan="2" class="text-center">146.800.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">873.400</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.666.933.400</th>
+                            <th class="text-center">1.637.573.400</th>
+                            <th class="text-center">1.618.573.400</th>
+                          </tr>
+                        </thead>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Wildtrak 2.0L AT 4x2 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="3" class="text-center">1.499.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">179.880.000</td>
+                          <td colspan="2" class="text-center">149.900.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">873.400</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.701.653.400</th>
+                            <th class="text-center">1.671.673.400</th>
+                            <th class="text-center">1.652.673.400</th>
+                          </tr>
+                        </thead>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Giá lăn bánh phiên bản Ford Everest Platinum 2.0L AT 4x4 AT</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th class="text-center">Khoản phí</th>
+                          <th class="text-center">Hà Nội(đồng)</th>
+                          <th class="text-center">TP.HCM(đồng)</th>
+                          <th class="text-center">Các tỉnh khác(đồng)</th> 
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Giá niêm yết</td>
+                          <td colspan="3" class="text-center">1.545.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí trước bạ</td>
+                          <td class="text-center">185.400.000</td>
+                          <td colspan="2" class="text-center">154.500.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí đăng kiểm</td>
+                          <td colspan="3" class="text-center">340.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí bảo trì đường bộ (1 năm)</td>
+                          <td colspan="3" class="text-center">1.560.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bảo hiểm trách nhiệm dân sự (1 năm)</td>
+                          <td colspan="3" class="text-center">873.400</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Phí biển số</td>
+                          <td colspan="2" class="text-center">20.000.000</td>
+                          <td class="text-center">1.000.000</td>
+                        </tr>
+                      </tbody>
+                      <thead>
+                          <tr>
+                            <th class="text-center">Giá lăn bánh tạm tính</th>
+                            <th class="text-center">1.753.173.400</th>
+                            <th class="text-center">1.722.273.400</th>
+                            <th class="text-center">1.703.273.400</th>
+                          </tr>
+                        </thead>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="text-black">Đánh giá xe Ford Everest 2024</h3>
+                  <div class="container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th colspan="5" class="text-center">Cấu hình Ford Everest 2024</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">Hãng sản xuất</td>
+                          <td colspan="4" class="text-center">Ford</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Tên xe</td>
+                          <td colspan="4" class="text-center">Everest</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Giá từ</td>
+                          <td colspan="4" class="text-center">1,099 tỷ VND</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Kiểu dáng</td>
+                          <td colspan="4" class="text-center">SUV</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Số chỗ ngồi</td>
+                          <td colspan="4" class="text-center">7</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Xuất xứ</td>
+                          <td colspan="4" class="text-center">Thái Lan</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Động cơ</td>
+                          <td colspan="4" class="text-center">Diesel 2.0L (Single và Bi Turbo)</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Dung tích xi lanh</td>
+                          <td colspan="4" class="text-center">1996 cc</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hộp số</td>
+                          <td colspan="4" class="text-center">6AT và 10AT</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Hệ truyền động</td>
+                          <td colspan="4" class="text-center">4x2 và 4x4</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Kích thước DxRxC</td>
+                          <td colspan="4" class="text-center">4914 x 1923 x 1842 mm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Khoảng sáng gầm xe</td>
+                          <td colspan="4" class="text-center">200 mm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Chiều dài cơ sở</td>
+                          <td colspan="4" class="text-center">2900 mm</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Dung tích bình nhiên liệu</td>
+                          <td colspan="4" class="text-center">80L</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">Bánh xe và Lốp</td>
+                          <td colspan="4" class="text-center">225 / 65R18-R20</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3 class="text-black">Ưu điểm và nhược điểm xe Ford Ranger 2024</h3>
+                      <p>Ưu điểm</p>
+                        <ul>
+                          <li>Thiết kế hiện đại hầm hố và mang phẩm chất thể thao</li>
+                          <li>Sỡ hữu không gian nội thất rộng rãi, thoải mái</li>
+                          <li>Khả năng vận hành êm ái, động cơ khỏe, có thể đi nhiều trên nhiều địa hình khác nhau</li>
+                        </ul>  
+                        <p>Nhược điểm</p>
+                        <ul>
+                          <li>Không gian hàng ghế thứ 3 còn nhiều hạn chế</li>
+                          <li>Chưa có phanh điện tử và lẫy chuyến số trên vô lăng</li>
+                          <li>Giá bán phiên bản cao nhất cao hơn so với các đối thủ cùng phân khúc</li>
+                          <li>Vẫn sử dụng đông cơ cũ</li>
+                        </ul> 
+                  <h3 class="text-black">Điểm nổi bật của Ford Everest 2024 thế hệ mới</h3>
+                       <ul>
+                           <li>Thay đổi hoàn toàn thiết kế ngoại thất và nội thất, Ford Everest mới mang thiết kế DNA thiết kế toàn cầu của Ford</li>
+                           <li>Chiều dài cơ sở và chiều rộng tăng thêm so với thế hệ trước</li>
+                           <li>Không gian cabin được làm lại theo phong cách sang trọng hơn</li>
+                           <li>Tất cả phiên bản đều được trang bị thêm đế sạc điện thoại không dây</li>
+                           <li>Cụm màn hình thông tin - giải trí kích thước 10 inch hoạc 12 inch đặt dọc, thuận tiện cho các thao tác điều khiển của người lái</li>
+                           <li>Tăng kích thước màn hình thông số và giải trí</li>
+                           <li>Sử dụng hệ điều hành SYNC 4A mới nhất của Ford</li>
+                           <li>Hỗ trợ đỗ xe tự động 2.0</li>
+                           <li>Hệ thống hỗ trợ giữ làn và cảnh báo chệch làn đường</li>
+                           <li>Tất cả biến thể của Ford Everest mới đều có 7 túi khí</li>
+                           <li>Có 6 chế độ lái gồm Normal, Eco, Tow/Hawl, Slippery, Mud & Ruts và Sand</li>
+                           <li>Xe có 7 màu sắc ngoại thất và 2 màu nội thất.</li>
+                       </ul> 
+                  <p>Những tiện nghi đáng chú ý khác trên Ford Everest 2024 gồm có camera 360 độ, tính năng chia màn hình để hiển thị nhiều nội dung.</p>
+                </div>
+                <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Ford Everest</h2>
+                  </div>
+                  <div id="carouselExampleIndicators-1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestTitaniumPlus2.0L4x4AT- 2024(white)..webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Titanium Plus 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestSport2.0L4x2AT-2024(white).jpg" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Sport 2.0L 4x2 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestTitanium2.0L4x2AT- 2024(black).jpg">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Titanium 2.0L 4x2 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đen, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Long An]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestPlatinum2.0L4x4AT-2024(black).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Platinum 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đen, Máy dầu 2.0L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestWildtrak2.0L4x4AT-2024(orange).webp" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Wildtrak 2.0L 4x4 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Cam, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeFordEverestAmbiente2.0L4x2AT-2023(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Ford Everest Ambiente 2.0L 4x2 AT - 2023</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;">
+              <div class="card" style="width: 72rem;">
+                <h5 class="card-header text-white bg-dark">Từ khóa liên quan</h5>
+                <div class="card-body">
+                  <ul class="key-word">
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html">Giá xe Audi A4</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html">Giá xe Audi A6</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html">Giá xe Audi A7</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html">Giá xe Audi A8</a></li>
+                 </ul>
+                 <ul class="key-word">
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html">Giá xe BMW X4</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html">Giá xe BMW X5</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html">Giá xe BMW X6</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html">Giá xe BMW X7</a></li>
+                 </ul>
+                 <ul class="key-word">
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html">Giá xe Ford Everest</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html">Giá xe Ford Ranger</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html">Giá xe Ford Territory</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html">Giá xe Ford Transit</a></li>
+                </ul>
+                <ul class="key-word">
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCityChitiet.html">Giá xe Honda City</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCivicChitiet.html">Giá xe Honda Civic</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html">Giá xe Honda CRV</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaHRVChitiet.html">Giá xe Honda HRV</a></li>
+              </ul>
+                </div>
+              </div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/HTML/index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bảo mật</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+
+    <!-- Hide Navbar -->
+    <script>
+      $(document).ready(function() {
+          var previousScroll = 0;
+          $(window).scroll(function() {
+              var currentScroll = $(this).scrollTop();
+              if (currentScroll > previousScroll) {
+                  $(".navbar").slideUp();
+              } else {
+                  $(".navbar").slideDown();
+              }
+              previousScroll = currentScroll;
+          });
+      });
+      </script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+body {
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.c-item {
+   height: 800px;
+}
+
+.c-img {
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(0.6);
+}
+
+.custom-font-size {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.custom-font-size p {
+    font-size:25rem;
+    color: #00aeff;
+    position: relative;
+    top: -25rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.stroke-text p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 8px;
+}
+
+.custom-font-size h3 {
+    font-size: 15rem;
+    font-style: italic;
+    position: relative;
+    top:15rem;
+    color: #78d4ff;
+
+}
+
+.custom-font-size h4 {
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.custom-img img {
+    width:50rem;
+    height: 30rem;
+    position: relative;
+    top: -50rem;
+    left: 30rem;
+}
+
+/* BMW */
+
+.custom-font-size-BMW {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.custom-font-size-BMW p {
+    font-size:25rem;
+    color: #ffffff;
+    position: relative;
+    top: -25rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.stroke-text-BMW p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 8px;
+}
+
+.custom-font-size-BMW h3 {
+    font-size: 15rem;
+    font-style: italic;
+    position: relative;
+    top:15rem;
+    color: #ffffff;
+
+}
+
+.custom-font-size-BMW h4 {
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.custom-img-BMW img {
+    width:70rem;
+    height: 50rem;
+    position: relative;
+    top: -65rem;
+    left: 14rem;
+}
+
+/* Ford */
+
+.custom-font-size-Ford {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.custom-font-size-Ford p {
+    font-size:25rem;
+    color: #ff3a3a;
+    position: relative;
+    top: -25rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.stroke-text-Ford p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 8px;
+}
+
+.custom-font-size-Ford h3 {
+    font-size: 15rem;
+    font-style: italic;
+    position: relative;
+    top:15rem;
+    color: #ff8585;
+
+}
+
+.custom-font-size-Ford h4 {
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.custom-img-Ford img {
+    width:70rem;
+    height: 40rem;
+    position: relative;
+    top: -54rem;
+    left: 25rem;
+}
+
+/* Honda */
+
+.custom-font-size-Honda {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.custom-font-size-Honda p {
+    font-size:25rem;
+    color: #adadad;
+    position: relative;
+    top: -25rem;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.stroke-text-Honda p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 8px;
+}
+
+.custom-font-size-Honda h3 {
+    font-size: 15rem;
+    font-style: italic;
+    position: relative;
+    top:15rem;
+    color: #696969;
+
+}
+
+.custom-font-size-Honda h4 {
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+.custom-img-Honda img {
+    width:50rem;
+    height: 30rem;
+    position: relative;
+    top: -50rem;
+    left: 30rem;
+}
+
+/* Underline */
+
+.nav-link{
+    transition: all 0.2s;
+    position:relative;
+}
+
+.nav-link::after{
+    content:'';
+   opacity: 0;
+   transition: all 0.2s;
+   height: 2px;
+   width: 100%;
+   background: white;
+   position:absolute;
+   bottom: 0;
+   left:0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.custom-btn-color {
+    background:#fff;
+}
+
+.custom-btn-color:hover {
+    background:#fff;
+    color: #000;
+}
+
+/* Thẻ tiêu đề */
+
+.card-title {
+    position: relative;
+    left: 15rem;
+}
+
+.card-title h2 {
+    font-size: 30rem;
+}
+
+/* căn chỉnh khoảng cách */
+
+#search-car {
+    margin-right:  250px;
+}
+
+/* Background slide */
+
+.card-img {
+    object-fit: cover;
+   filter: brightness(0.2);
+}
+
+/* Background slide 3 */
+
+.box {
+    width: auto;
+    height: 150px;
+    background: rgb(255, 255, 255);
+}
+
+/* row-logo */
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Div Shape */
+
+/*Shape for Audi */
+
+.car-Audi {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:400px;
+    width: 1200px;
+    background: #000000;
+    display:flex;
+    border-radius:7px;
+}
+
+.content-car {
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #000000;
+    box-sizing:border-box;
+    padding: 30px 50px;
+    border-radius:7px;
+}
+.content-car h1{
+    font-size:60px;
+}
+.image-car {
+    width: calc(50% + 50px);
+    height: 100%;
+    background: #f00;
+    box-sizing:border-box;
+    border-left: 100px solid #000000;
+    border-bottom: 400px solid transparent;
+    background: url(/Image/xeAudiA645TFSI.jpg);
+    background-position: -75px -5px;
+    background-size: 150%;
+    border-radius:7px;
+}
+
+/*Shape for BMW */
+
+.car-BMW {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:400px;
+    width: 1200px;
+    background: #000000;
+    display:flex;
+    border-radius:7px;
+}
+
+.content-car-BMW {
+    width: calc(50% + 50px);
+    height: 100%;
+    background: #000000;
+    box-sizing:border-box;
+    padding: 30px 50px;
+    border-radius:7px;
+    text-align: right;
+}
+.content-car-BMW h1{
+    font-size:60px;
+    text-align: right;
+}
+.image-car-BMW {
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #f00;
+    box-sizing:border-box;
+    border-left: 0px solid #000000;
+    border-bottom: 400px solid transparent;
+    background: url(/Image/xeBMW7735iPE2023.jpg);
+    background-position: -20px 0px;
+    background-size: 120%;
+    border-radius:7px;
+}
+
+/* carousel for slide 4 */ 
+
+.c-item-2 {
+    height: 1000px;
+ }
+ 
+.c-img-2 {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.2);
+ }
+
+/*Shape for Ford */
+
+.car-Ford {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:400px;
+    width: 1200px;
+    background: #000000;
+    display:flex;
+    border-radius:7px;
+}
+
+.content-car-Ford {
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #000000;
+    box-sizing:border-box;
+    padding: 30px 50px;
+    border-radius:7px;
+}
+.content-car-Ford h1{
+    font-size:60px;
+}
+.image-car-Ford {
+    width: calc(50% + 50px);
+    height: 100%;
+    background: #f00;
+    box-sizing:border-box;
+    border-left: 100px solid #000000;
+    border-bottom: 400px solid transparent;
+    background: url(/Image/xeFordEverestAmbiente2.0L4x2AT-2024\(black\).jpg);
+    background-position: -5px 0px;
+    background-size: 130%;
+    border-radius:7px;
+}
+
+/*Shape for BMW */
+
+.car-Honda {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:400px;
+    width: 1200px;
+    background: #000000;
+    display:flex;
+    border-radius:7px;
+}
+
+.content-car-Honda {
+    width: calc(50% + 50px);
+    height: 100%;
+    background: #000000;
+    box-sizing:border-box;
+    padding: 30px 50px;
+    border-radius:7px;
+    text-align: right;
+}
+.content-car-Honda h1{
+    font-size:60px;
+    text-align: right;
+}
+.image-car-Honda {
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #f00;
+    box-sizing:border-box;
+    border-left: 0px solid #000000;
+    border-bottom: 400px solid transparent;
+    background: url(/Image/xeHondaCityRS1.5AT-2024\(blue\).webp);
+    background-position: 0px 0px;
+    background-size: 100%;
+    border-radius:7px;
+}
+
+/* Chặn xuống dòng */
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* dropdown logout */
+
+.dropdown-menu {
+    position: absolute;
+    right:0px;
+    top: 47px;
+    border-radius:0;
+}
+
+/* form Modal cho các loại xe */
+
+.contain-input {
+    width: 100%;
+}
+  
+.table {
+    width: 100%;
+    padding: 10px;
+}
+
+td {
+    padding: 5px; 
+    vertical-align: top; 
+    width: 10%;
+}
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+  
+.form-group label {
+    margin-bottom: 5px;
+}
+  
+.form-group input,
+.form-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-group-address input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Responsive styles for iPhone SE */
+@media (max-width: 320px) {
+    /* CSS rules for small screens like iPhone SE */
+    /* Example: */
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+    
+    .container {
+        width: 100%; /* Ensure elements are fluid */
+    }
+}

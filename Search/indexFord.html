@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/effect/effect1.css">
+    <title>Bán xe cũ</title>
+</head>
+<body class="vh-100 overflow-x-hidden">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#search-car">Tìm mua ô tô</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#table-car">Bảng giá ô tô</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="userName" class="no-wrap"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="/HTML/QuanLyThongTin/thongtincanhan.html">Đơn xe bạn đã đặt</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+          </nav>
+    </div>
+    <br>
+    <!-- <div class="container-fluid">
+      <div class="row">
+          <div class="col-2 sidebar">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                Tìm theo hãng xe 
+              </a>
+              <a href="/HTML/Xe/Audi.html" class="list-group-item list-group-item-action list-group-item-primary">Audi</a>
+              <a href="/HTML/Xe/BMW.html" class="list-group-item list-group-item-action list-group-item-primary">BMW</a>
+              <a href="/HTML/Xe/Ford.html" class="list-group-item list-group-item-action list-group-item-primary">Ford</a>
+              <a href="/HTML/Xe/Honda.html" class="list-group-item list-group-item-action list-group-item-primary">Honda</a>
+            </div>
+          </div>
+      </div> -->
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="/Image/xeAudiForEffect1.webp" class="d-block w-100 c-img" alt="slide1">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block text-start custom-font-size stroke-text custom-img">
+              <h1>Hãng xe AUDI</h1>
+              <h4 class="text-start">Audi là hãng xe sang lớn thứ ba của Đức lẫn trên quy mô toàn cầu xét về doanh số tiêu thụ. Thương hiệu 4 vòng tròn nổi tiếng với các sản 
+                phẩm thiết kế trẻ trung, thời trang và thường đi đầu trong các công nghệ mới ứng dụng trên xe, đặc biệt đèn chiếu sáng. </h4>
+              <h3>AUDI</h3>
+              <p>AUDI</p>
+              <img src="/Image/AudiRemoveBackGround.png">
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="/Image/xeBMWForEffect.jpg" class="d-block w-100 c-img" alt="slide2">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block text-start custom-font-size-BMW stroke-text-BMW custom-img-BMW">
+              <h1>Hãng xe BMW</h1>
+              <h4 class="text-start">BMW là hãng xe của Đức, cùng Mercedes và Audi tạo nên bộ tam thống trị phân khúc xe hạng sang toàn cầu. Hãng xe có trụ sở tại Munich nổi
+                 tiếng với triết lý nam tính, thể thao trong thiết kế.  </h4>
+              <h3>BMW</h3>
+              <p>BMW</p>
+              <img src="/Image/BMWRemoveImg.png">
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="/Image/xeFordForEffect1.jpg" class="d-block w-100 c-img" alt="slide3">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block text-start custom-font-size-Ford stroke-text-Ford custom-img-Ford">
+              <h1>Hãng xe FORD</h1>
+              <h4 class="text-start">Ford là nhà sản xuất ô tô lớn thứ hai của Mỹ (sau General Motors) và lớn thứ năm trên thế giới (sau Toyota, VW, Hyundai-Kia và General Motors) 
+                dựa trên lượng xe sản xuất năm 2015. Vào cuối năm 2010, Ford là nhà sản xuất ô tô lớn thứ năm ở châu Âu. </h4>
+              <h3>FORD</h3>
+              <p>FORD</p>
+              <img src="/Image/FordRemoveBackground.png">
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="/Image/xeHondaForEffect1(1).jpg" class="d-block w-100 c-img" alt="slide4">
+            <div class="carousel-caption top-0 mt-4 d-none d-md-block text-start custom-font-size-Honda stroke-text-Honda custom-img-Honda">
+              <h1>Hãng xe HONDA</h1>
+              <h4 class="text-start">Honda là một hãng xe Nhật Bản, nổi tiếng với các mẫu xe máy tại Việt Nam. Các mẫu ôtô của Honda thường
+                 có đặc tính thể thao, vận hành năng động. Tuy vậy, cách định giá cao là một rào cản để doanh số các mẫu xe bứt phá. Nhưng 
+                 CR-V, City vẫn là những cái tên đáng gờm trong phân khúc. </h4>
+              <h3>HONDA</h3>
+              <p>HONDA</p>
+              <img src="/Image/HondaRemoveBackground.png">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+  <div class="card bg-primary text-white">
+    <img src="/Image/BackgroundFord.webp" class="card-img" style="height: 60rem;">
+    <div class="card-img-overlay">
+      <h1 class="card-title" id="search-car">Tìm mua ô tô</h1>
+      <div class="card" style="width: 87rem;height: 52rem; position: relative;left: 15rem;">
+        <div class="card-body bg-dark text-white">
+           <div class="row m-2">
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordRangerXLS2.0L4x2AT-2024(red).webp" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:5px;">Ford Ranger XLS 4x2 A4-2024</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Đỏ, Máy dầu 2.0L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal">576.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Ranger XLS 4x2 A4-2024 -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts"></div>
+                              <!-- Nội dung modal về xe Ford Ranger XLS 4x2 A4-2024 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom">Tên khách hàng</label>
+                                        <input type="text" id="custom">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone">Số điện thoại</label>
+                                        <input type="text" id="phone">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car">Tên xe ô tô</label>
+                                        <input type="text" id="car" class="bg-secondary text-white" value="Ford Ranger XLS 4x2 A4-2024" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay" name="choose-pay" onchange="showSecondSelect()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container" hidden>
+                                          <label for="select2">Chọn ngân hàng:</label>
+                                          <select id="select2" name="select2">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money">Giá thành cần trả</label>
+                                        <input type="text" id="money" class="bg-secondary text-white" value="576.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordRangerXLS2.0L4x4AT-2022(black).jpg" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:5px;">Ford Ranger XLS 4x2 AT-2022</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Đen, Máy dầu 2.0L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-1">595.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Ranger XLS 4x2 AT-2022 -->
+                    <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-1" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-1">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts1"></div>
+                              <!-- Nội dung modal về xe Ford Ranger XLS 4x2 AT-2022 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom1">Tên khách hàng</label>
+                                        <input type="text" id="custom1">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone1">Số điện thoại</label>
+                                        <input type="text" id="phone1">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address1">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address1">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car1">Tên xe ô tô</label>
+                                        <input type="text" id="car1" class="bg-secondary text-white" value="Ford Ranger XLS 4x2 AT-2022" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay1">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay1" name="choose-pay1" onchange="showSecondSelect1()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash1">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking1">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm1">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container1" hidden>
+                                          <label for="select21">Chọn ngân hàng:</label>
+                                          <select id="select21" name="select21">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money1">Giá thành cần trả</label>
+                                        <input type="text" id="money1" class="bg-secondary text-white" value="595.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo1()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordEverestTitanium2.0L4x2AT- 2024(white).jpg" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:5px;">Ford Everest Titanium AT-2022</h5>
+                    <p class="card-text text-center">Nhập khẩu, Trắng, Máy dầu 2.0L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-2">1.229.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Everest Titanium AT-2022 -->
+                    <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-2">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts2"></div>
+                              <!-- Nội dung modal về xe Ford Ranger XLS 4x2 AT-2022 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom2">Tên khách hàng</label>
+                                        <input type="text" id="custom2">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone2">Số điện thoại</label>
+                                        <input type="text" id="phone2">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address2">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address2">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car2">Tên xe ô tô</label>
+                                        <input type="text" id="car2" class="bg-secondary text-white" value="Ford Everest Titanium AT-2022" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay2">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay2" name="choose-pay2" onchange="showSecondSelect2()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash2">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking2">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm2">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container2" hidden>
+                                          <label for="select22">Chọn ngân hàng:</label>
+                                          <select id="select22" name="select22">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money2">Giá thành cần trả</label>
+                                        <input type="text" id="money2" class="bg-secondary text-white" value="1.229.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo2()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordEverestPlatinum2.0L4x4AT-2024(black).webp" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:5px;">Ford Everest Platinum AT-2024</h5>
+                    <p class="card-text text-center">Nhập khẩu, Đen, Máy dầu 2.0L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-3">1.545.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Everest Platinum AT-2024 -->
+                    <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-3" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-3">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts3"></div>
+                              <!-- Nội dung modal về xe Ford Everest Platinum AT-2024 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom3">Tên khách hàng</label>
+                                        <input type="text" id="custom3">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone3">Số điện thoại</label>
+                                        <input type="text" id="phone3">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address3">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address3">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car3">Tên xe ô tô</label>
+                                        <input type="text" id="car3" class="bg-secondary text-white" value="Ford Everest Platinum AT-2024" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay3">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay3" name="choose-pay3" onchange="showSecondSelect3()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash3">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking3">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm3">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container3" hidden>
+                                          <label for="select23">Chọn ngân hàng:</label>
+                                          <select id="select23" name="select23">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money3">Giá thành cần trả</label>
+                                        <input type="text" id="money3" class="bg-secondary text-white" value="1.545.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo3()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordTerritoryTrend1.5AT-2022(brown).jpg" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:10px;">Ford Territory Trend AT-2022</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Nâu, Máy xăng 1.5L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-4">745.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Territory Trend AT-2022 -->
+                    <div class="modal fade" id="exampleModal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-4" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-4">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts4"></div>
+                              <!-- Nội dung modal về xe Ford Territory Trend AT-2022 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom4">Tên khách hàng</label>
+                                        <input type="text" id="custom4">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone4">Số điện thoại</label>
+                                        <input type="text" id="phone4">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address4">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address4">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car4">Tên xe ô tô</label>
+                                        <input type="text" id="car4" class="bg-secondary text-white" value="Ford Territory Trend AT-2022" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay4">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay4" name="choose-pay4" onchange="showSecondSelect4()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash4">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking4">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm4">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container4" hidden>
+                                          <label for="select24">Chọn ngân hàng:</label>
+                                          <select id="select24" name="select24">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money4">Giá thành cần trả</label>
+                                        <input type="text" id="money4" class="bg-secondary text-white" value="745.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo4()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordTerritoryTitanium1.5AT-2024(red).jpg" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:0px;">Ford Territory TitaniumAT-2024</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-5">918.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Territory Titanium AT-2024 -->
+                    <div class="modal fade" id="exampleModal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-5" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-5">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts5"></div>
+                              <!-- Nội dung modal về xe Ford Territory TitaniumAT-2024 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom5">Tên khách hàng</label>
+                                        <input type="text" id="custom5">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone5">Số điện thoại</label>
+                                        <input type="text" id="phone5">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address5">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address5">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car5">Tên xe ô tô</label>
+                                        <input type="text" id="car5" class="bg-secondary text-white" value="Ford Territory Titanium AT-2024" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay5">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay5" name="choose-pay5" onchange="showSecondSelect5()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash5">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking5">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm5">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container5" hidden>
+                                          <label for="select25">Chọn ngân hàng:</label>
+                                          <select id="select25" name="select25">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money5">Giá thành cần trả</label>
+                                        <input type="text" id="money5" class="bg-secondary text-white" value="918.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo5()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordTransitTieuChuan-2024(sliver).jpg" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:5px;">Ford Transit Tiêu chuẩn - 2024</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Bạc, Máy dầu 2.2L, Số tay...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-6">764.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Transit Tiêu chuẩn - 2024 -->
+                    <div class="modal fade" id="exampleModal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-6" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-6">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts6"></div>
+                              <!-- Nội dung modal về xe Ford Transit Tiêu chuẩn - 2024 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom6">Tên khách hàng</label>
+                                        <input type="text" id="custom6">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone6">Số điện thoại</label>
+                                        <input type="text" id="phone6">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address6">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address6">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car6">Tên xe ô tô</label>
+                                        <input type="text" id="car6" class="bg-secondary text-white" value="Ford Transit Tiêu chuẩn - 2024" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay6">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay6" name="choose-pay6" onchange="showSecondSelect6()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash6">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking6">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm6">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container6" hidden>
+                                          <label for="select26">Chọn ngân hàng:</label>
+                                          <select id="select26" name="select26">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money6">Giá thành cần trả</label>
+                                        <input type="text" id="money6" class="bg-secondary text-white" value="764.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo6()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-2">
+                <div class="card" style="width: 20rem;">
+                  <img src="/Image/xeFordTransitCuuThuong-2024(white).webp" class="card-img-top" style="width: 317px;height: 180px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="position: relative;left:3px;">Ford Transit Cứu thương - 2024</h5>
+                    <p class="card-text text-center">Lắp ráp trong nước, Trắng, Máy dầu 2.2L, Số tay...</p>
+                    <a href="#" class="btn btn-secondary" style="position: relative;left:4rem;" data-toggle="modal" data-target="#exampleModal-7">849.000.000 đồng</a>
+
+                    <!-- Modal xe Ford Transit Cứu thương - 2024 -->
+                    <div class="modal fade" id="exampleModal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-7" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel-7">Vui lòng điền thông tin của bạn vào</h5>
+                              </div>
+                              <div class="modal-body">
+                              <div id="alerts7"></div>
+                              <!-- Nội dung modal về xe Ford Transit Cứu thương - 2024 -->
+                              <div class="contain-input">
+                                <table>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="custom7">Tên khách hàng</label>
+                                        <input type="text" id="custom7">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="phone7">Số điện thoại</label>
+                                        <input type="text" id="phone7">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group-address">
+                                        <label for="address7">Địa chỉ cụ thể</label>
+                                        <input type="text" id="address7">
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="car7">Tên xe ô tô</label>
+                                        <input type="text" id="car7" class="bg-secondary text-white" value="Ford Transit Cứu thương - 2024" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="choose-pay7">Chọn hình thức thanh toán</label>
+                                        <select id="choose-pay7" name="choose-pay7" onchange="showSecondSelect7()">
+                                          <option value="">--Chọn kiểu thanh toán--</option>
+                                          <option value="choose-pay-cash7">Tiền mặt</option>
+                                          <option value="choose-pay-mobile-banking7">Chuyển khoản qua Ngân Hàng</option>
+                                          <option value="choose-pay-atm7">Thẻ tín dụng, thẻ ghi nợ</option>
+                                        </select>
+                                        <br>
+                                        <div id="select2Container7" hidden>
+                                          <label for="select27">Chọn ngân hàng:</label>
+                                          <select id="select27" name="select27">
+                                              <option value="">--Chọn ngân hàng--</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="form-group">
+                                        <label for="money7">Giá thành cần trả</label>
+                                        <input type="text" id="money7" class="bg-secondary text-white" value="849.000.000 đồng" readonly>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                  <button type="button" class="btn btn-primary" onclick="saveInfo7()">Mua</button>
+                              </div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-secondary mx-1">
+                    <a href="/Search/indexAudi.html" style="text-decoration: none;" class="text-secondary">1</a>
+                </button>
+                <button type="button" class="btn btn-outline-secondary mx-1">
+                    <a href="/Search/indexBMW.html" style="text-decoration: none;" class="text-secondary">2</a>
+                </button>
+                <button type="button" class="btn btn-outline-light mx-1">
+                    <a href="/Search/indexFord.html" style="text-decoration: none;" class="text-white">3</a>
+                </button>
+                <button type="button" class="btn btn-outline-secondary mx-1">
+                    <a href="/Search/indexHonda.html" style="text-decoration: none;" class="text-secondary">4</a>
+                </button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="border:none;">
+    <div class="box">
+      <div class="card-body">
+        <div class="row">
+           <div class="col-2">
+               <img src="/Image/logoAudiBlack2.png" style="width: 280px;height:120px;">
+           </div>
+           <div class="col-1">
+            <img src="/Image/logoBMWblack.png" style="width: 150px;height:120px;position:relative;left:15px;">
+           </div>
+            <div class="col-2">
+              <img src="/Image/logoFordBlack.png" style="width: 240px;height:120px;position:relative;left:65px;">
+            </div>
+            <div class="col-2">
+              <img src="/Image/logoHondaBlack.png" style="width: 180px;height:120px;position:relative;left:75px;">
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item-2">
+        <img src="/Image/xeAudiA41.8TFSI-2013.webp" class="d-block w-100 c-img-2">
+        <div class="carousel-caption top-0  d-none d-md-block">
+          <h1 style="position:absolute;left: 0px;" id="table-car">Bảng giá ô tô AUDI - BMW</h1>
+        </div>
+         <section class="car-Audi">
+             <div class="content-car">
+                <h1 class="text-white">Audi</h1>
+                <p class="text-white">Giá xe Audi đang được niêm yết thấp nhất từ 1,4 tỷ đồng với dòng Audi Q2, và cao nhất 5,35 tỷ 
+                  cho dòng RS e-tron GT. Audi là thương hiệu xe hơi hạng sang đến từ Đức, đã và đang được ưa chuộng
+                  tại thị trường Việt Nam. Hiện nay, Audi Việt Nam có các đại lý Audi Hà Nội, Audi Đà Nẵng, Audi 
+                  Hồ Chí Minh, Audi Tân Bình, Audi City Phú Mỹ Hưng.</p>
+                  <button type="button" class="btn btn-light">
+                    <a href="/HTML/BangGia/Giaxe/giaxeAudi.html" style="text-decoration: none;color:black;">Xem chi tiết</a>
+                  </button>
+             </div>
+             <div class="image-car"></div>
+        </section>
+        <section class="car-BMW">
+           <div class="image-car-BMW"></div>
+           <div class="content-car-BMW">
+              <h1 class="text-white">BMW</h1>
+              <p class="text-white">BMW là hãng xe đến từ nước Đức, ngoài dòng xe mang chính tên BMW ra, hãng còn sở hữu những thương
+              hiệu ô tô khác là Mini Cooper và Rolls-Royce. Dòng xe này du nhập vào Việt Nam từ những năm 1994, hiện nay tập đoàn 
+              Thaco Trường Hải phân phối.</p>
+              <button type="button" class="btn btn-light">
+                <a href="/HTML/BangGia/Giaxe/giaxeBmw.html" style="text-decoration: none;color:black;">Xem chi tiết</a>
+              </button>
+           </div>
+        </section>
+      </div>
+      <div class="carousel-item c-item-2">
+        <img src="/Image/xeAudiA41.8TFSI-2013.webp" class="d-block w-100 c-img-2">
+        <div class="carousel-caption top-0  d-none d-md-block">
+          <h1 style="position:absolute;left: 0px;" id="table-car">Bảng giá ô tô FORD - HONDA</h1>
+        </div>
+         <section class="car-Ford">
+             <div class="content-car-Ford">
+                <h1 class="text-white">Ford</h1>
+                <p class="text-white">Giá xe Ford đang được niêm yết với giá từ 669 triệu đến 2,439 tỷ đồng cho tùy từng dòng xe và tùy 
+                  phiên bản khác nhau.Với những dòng xe có thiết kế hiện đại, thông minh, an toàn, chất lượng, đa dạng về dòng sản phẩm 
+                  từ xe du lịch, xe thương mại, xe bán tải đã giúp Ford luôn được người dân ưa chuộng.</p>
+                  <button type="button" class="btn btn-light">
+                    <a href="/HTML/BangGia/Giaxe/giaxeFord.html" style="text-decoration: none;color:black;">Xem chi tiết</a>
+                  </button>
+             </div>
+             <div class="image-car-Ford"></div>
+        </section>
+        <section class="car-Honda">
+           <div class="image-car-Honda"></div>
+           <div class="content-car-Honda">
+              <h1 class="text-white">Honda</h1>
+              <p class="text-white">Giá xe ô tô Honda 2024 đang được niêm yết dao động thấp nhất từ 529 triệu đồng cho Honda City và 
+                cao nhất 1,319 tỷ đồng cho Honda Accord. Các dòng xe Honda cũng đang nhận được những chương trình ưu đãi hấp dẫn trong tháng.</p>
+                <button type="button" class="btn btn-light">
+                  <a href="/HTML/BangGia/Giaxe/giaxeHonda.html" style="text-decoration: none;color:black;">Xem chi tiết</a>
+                </button>
+           </div>
+        </section>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+    <!-- Lựa chọn 1 -->
+    <script src="/JavaScript/Choose Car/chooseCar1.js"></script>
+    <!-- Lựa chọn 2 -->
+    <script src="/JavaScript/Choose Car/chooseCar2.js"></script>
+    <!-- Lựa chọn 3 -->
+    <script src="/JavaScript/Choose Car/chooseCar3.js"></script>
+    <!-- Lựa chọn 4 -->
+     <script src="/JavaScript/Choose Car/chooseCar4.js"></script>
+    <!-- Lựa chọn 5 -->
+      <script src="/JavaScript/Choose Car/chooseCar5.js"></script>  
+      <!-- Lựa chọn 6 -->
+      <script src="/JavaScript/Choose Car/chooseCar6.js"></script> 
+      <!-- Lựa chọn 7 -->
+      <script src="/JavaScript/Choose Car/chooseCar7.js"></script> 
+      <!-- Lựa chọn 8 -->
+      <script src="/JavaScript/Choose Car/chooseCar8.js"></script> 
+
+
+    <!-- Script -->
+    <!-- Hide navbar -->
+    <script>
+        $(document).ready(function() {
+            var previousScroll = 0;
+            $(window).scroll(function() {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll > previousScroll) {
+                    $(".navbar").slideUp();
+                } else {
+                    $(".navbar").slideDown();
+                }
+                previousScroll = currentScroll;
+            });
+        });
+        </script>
+</body>
+</html>

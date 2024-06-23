@@ -1,0 +1,113 @@
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    margin: 0 1em;
+    width: calc(100%/3);
+}
+
+.image-wrapper img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.image-wrapper {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-carBMW3series {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMW5series {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMW7Series {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX3 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX4 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX5 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX6 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX7 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMW7series {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-noithatBMW7series {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carBMWX7-2024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+/* Từ khóa liên quan */
+
+.key-word {
+    display: table; 
+    width: 100%; 
+    border-collapse: collapse;
+    position:relative;
+    left: 40px;
+}
+
+.key-word li {
+    display: table-cell; 
+    padding: 10px; 
+    border: none;
+}
+
+.key-word a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Chặn xuống dòng */
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* dropdown logout */
+
+.dropdown-menu {
+    position: absolute;
+    right:0px;
+    top: 47px;
+    border-radius:0;
+}

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styleGiaxe/styleGiaxeBMW.css">
+    <title>Bảng giá ô tô</title>
+</head>
+<body class="bg-secondary">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/HTML/index.html#search-car">Tìm mua ô tô</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/HTML/index.html#table-car">Bảng giá ô tô</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+              <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="userName" class="no-wrap"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                      <a class="dropdown-item" href="#">Đơn xe bạn đã đặt</a>
+                      <div class="dropdown-divider"></div>
+                      <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+          <div class="card" style="width: 19rem;height: 15rem;position: relative; top:80px;">
+            <div class="card-header text-white text-center bg-dark">
+              <h6>Bảng giá chi tiết các dòng xe BMW</h6>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html" class="list-group-item list-group-item-action">Giá xe BMW X4</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html" class="list-group-item list-group-item-action">Giá xe BMW X5</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html" class="list-group-item list-group-item-action">Giá xe BMW X6</a>
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html" class="list-group-item list-group-item-action">Giá xe BMW X7</a>
+              </div>
+            </div>
+          <div class="card" style="width: 75rem;position: relative;left: 20rem;top: -15rem;">
+            <div class="card-header text-black">
+              <h2>GIÁ BÁN Ô TÔ BMW</h2>
+            </div>
+              <div class="card-body">
+                <p>BMW là hãng xe đến từ nước Đức, ngoài dòng xe mang chính tên BMW ra, hãng còn sở hữu những thương hiệu 
+                  ô tô khác là Mini Cooper và Rolls-Royce. Dòng xe này du nhập vào Việt Nam từ những năm 1994, hiện nay tập 
+                  đoàn Thaco Trường Hải phân phối.</p>
+                <h2>Giá xe BMW hiện tại</h2>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">BẢNG GIÁ XE Ô TÔ BMW THÁNG 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><h4 class="text-center">Loại xe</h4></td>
+                          <td><h4 class="text-center">Dòng xe</h4></td>
+                          <td><h4 class="text-center">Giá thành</h4></td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="text-center">BMW 3-Series</td>
+                          <td class="text-center">320i Sport Line LCI (2023)</td>
+                          <td class="text-center">1.435.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">320i M Sport LCI (2023)</td>
+                          <td class="text-center">1.635.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">330i M Sport LCI (2023)</td>
+                          <td class="text-center">1.809.000.000</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="text-center">BMW 5-Series</td>
+                          <td class="text-center">520i (2022, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">1.839.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">520i (2023, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">1.979.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">520i (2022, lắp ráp) k cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">1.835.000.000</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="text-center">BMW 7-Series</td>
+                          <td class="text-center">730LCI M Sport (2022)</td>
+                          <td class="text-center">3.919.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">730LCI PE (2022)</td>
+                          <td class="text-center">4.129.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">735i M Sport AllNew (2023)</td>
+                          <td class="text-center">4.499.000.000</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="10" class="text-center">BMW X-Series</td>
+                          <td class="text-center">X3 sDrive20i (2023) K cảm ứng nút xoay điều khiển, màn hình Digital</td>
+                          <td class="text-center">1.789.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X3 sDrive20i (2023) Có cảm ứng nút xoay điều khiển, màn hình Digital</td>
+                          <td class="text-center">1.795.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2022) hệ thống treo Adaptive, k đá cốp, k cảm ứng nút xoay điều khiển</td>
+                          <td class="text-center">2.909.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2022) hệ thống treo Adaptive, có đá cốp, k cảm ứng nút xoay điều khiển</td>
+                          <td class="text-center">2.899.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine (2023) k cảm ứng nút xoay điều khiển, k cam 360</td>
+                          <td class="text-center">3.709.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine LCI (2023) phiên bản mới, đầy đủ trang bị</td>
+                          <td class="text-center">4.159.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X6 xDrive40i M Sport 2022 (loa H&K, k đá cốp, k cảm ứng nút xoay điều khiển)</td>
+                          <td class="text-center">3.799.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X6 xDrive40i M Sport 2023 (loa H&K, có đã cốp, có cảm ứng nút xoay điều khiển)</td>
+                          <td class="text-center">4.459.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2022) K cam 360, có cam lùi, k đánh lái bánh sau, k hệ thống treo Executive Pro</td>
+                          <td class="text-center">5.979.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2023) K cam 360, có cam lùi, k đánh lái bánh sau, k hệ thống treo Executive Pro</td>
+                          <td class="text-center">6.369.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+               </div>
+               <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                <div class="card-header bg-black">
+                  <h2 style="color: white">Tin bán xe BMW</h2>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBmwX4xDrive20i.webp" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X4 xDrive20i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMW3series330i.webp" style="width: 300px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW 3 Series 330i M Sport-2023</h5>
+                            <p class="card-text">Lắp ráp trong nước, Ghi, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX3sDrive20i-2023.jpg">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X3 sDrive20i-2023</h5>
+                            <p class="card-text">Lắp ráp trong nước, Bạc, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX7xDrive40iMSport-2023.webp" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X7 xDrive40i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Trắng, Máy xăng 3.0L, Số tự động,...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX7xDrive40i- 2023.jpg" style="height: 180px;width: 300px">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X7 xDrive40i - 2023</h5>
+                            <p class="card-text">Nhập khẩu, Ghi, Máy xăng 3.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMW7Series735iMSport-2023.png" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW 7 Series 735i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 3.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeBMW3Series320iSportLineLCI2024.webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">BMW 3 Series 320i Sport Line LCI - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nươc, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA645TFSI.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">BMW 5 Series 530i M Sport</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+               </div>
+               <br>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW 3 Series</h2>
+              </div>
+              <div class="card-body">
+                <p>BMW 3-Series là đàn em của 5-Series và 7-Series nhưng lại là dòng xe chủ lực của nhà BMW, đối tượng khách hàng mà
+                   dòng xe này hướng đến là những người trẻ thành đạt và yêu thích trải nghiệm cảm giác lái. Xe sẽ phải cạnh tranh với 
+                   các đối thủ như Mercedes-Benz C-Class, Audi A4, tại thị trường ô tô Việt Nam có 3 phiên bản là 320i Sport Line, 320i 
+                   M Sport và 330i M Sport.</p>
+                <img src="/Image/xeBMW3series-image.webp" class="image-carBMW3series">
+                <br>
+                <br>
+                <br>
+                <p>BMW 320i là Mẫu sedan hạng D đem lại cảm giác lái phấn khích phù hợp với những người trẻ tuổi yêu thích cảm giác lái chính xác.</p>
+                <h4>Ưu điểm của xe BMW 320i</h4>
+                <ul>
+                  <li>Thiết kế trẻ trung, năng động và hiện đại</li>
+                  <li>Công nghệ an toàn tối tân</li>
+                  <li>Động cơ mạnh mẽ, cảm giác lái chân thật</li>
+                  <li>Hệ thống cách âm tốt</li>
+                </ul>
+                <h4>Nhược điểm của xe BMW 320i</h4>
+                <ul>
+                  <li>Phụ tùng thay thế đắt đỏ</li>
+                  <li>Vô lăng nặng, không phù hợp cho chị em</li>
+                </ul>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW 5 Series</h2>
+              </div>
+              <div class="card-body">
+                <p>Xe BMW 5 Series là chiếc Sedan cỡ trung hạng sang được phân phối tại Việt Nam với phiên bản 530i, xe sử dụng động cơ 4 xi lanh 
+                  có dung tích 2.0 cho công suất 252 mã lực. BMW 5-Series sẽ phải cạnh tranh cùng với các đối thủ đồng hương là Audi A6, Mercedes-Benz E-Class,...</p>
+                <img src="/Image/xeBMW5series-image.jpg" class="image-carBMW5series">
+                <br>
+                <br>
+                <br>
+                <p>Giá xe BMW 5 Series đang được niêm yết như sau:</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">BẢNG GIÁ XE Ô TÔ BMW 5 Series THÁNG 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">520i (2022, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">1.839.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">520i (2023, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">1.979.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">520i  M Sport (2022, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">2.225.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">520i  M Sport (2023, lắp ráp) có cảm ứng nút xoay điều khiển, có đá cốp</td>
+                          <td class="text-center">2.359.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">530i M Sport (2022, nhập khẩu) có cảm ứng trên nút xoay, có đá cốp, có seatbelt M, đèn Laserlight, k cam 360, có cam lùi, k cửa hít</td>
+                          <td class="text-center">2.899.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">530i M Sport (2022, nhập khẩu) có cảm ứng trên nút xoay, có seatbelt M, có cam lùi, đèn Laserlight, k cửa hít, k đá cốp</td>
+                          <td class="text-center">2.889.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW 7 Series</h2>
+              </div>
+              <div class="card-body">
+                <p>BMW 7-Series nằm trong phân khúc xe Sedan với các đối thủ như: Audi A8, Mercedes-Benz S-Class, Lexus LS... BMW 7-Series được trang bị những trang bị cao cấp
+                   hàng đầu phân khúc như: Hệ thống đèn pha LED tương thích thông minh, da Nappa, ốp gỗ Fineline, ghế chỉnh điện, sưởi ấm, thông hơi và massage. Màn hình trung
+                    tâm 10.25 inch, điều hòa tự động 4 vùng độc lập, hệ thống âm thanh vòm Harman Kardon...</p>
+                <img src="/Image/xeBMW7Series-image.webp" class="image-carBMW7Series">
+                <br>
+                <br>
+                <br>
+                <p>Tại thị trường Việt Nam, BMW 7-Series được phân phối các phiên bản với giá bán cụ thể như sau:</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">BẢNG GIÁ XE Ô TÔ BMW 7 Series THÁNG 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">730LCI M Sport (2022)</td>
+                          <td class="text-center">3.919.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">730LCI PE (2022)</td>
+                          <td class="text-center">1.979.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">735i M Sport AllNew (2023)</td>
+                          <td class="text-center">4.499.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">735i PE AllNew (2023)</td>
+                          <td class="text-center">4.939.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <h4>Ưu điểm của xe BMW 7 Series</h4>
+                <ul>
+                  <li>Thiết kế sang trọng và đẳng cấp</li>
+                  <li>Tiện nghi hiện đại hàng đầu phân khúc</li>
+                  <li>Động cơ mạnh mẽ, vận hành êm ái, cách âm tốt</li>
+                  <li>Nhiều công nghệ an toàn tối tân</li>
+                </ul>
+                <h4>Nhược điểm của xe BMW 7 Series</h4>
+                <ul>
+                  <li>Thiết kế có hơi hướng thể thao, chưa thực sự phù hợp số đông khách hàng cao cấp</li>
+                </ul>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW X3</h2>
+              </div>
+              <div class="card-body">
+                <p>Tháng 7-2019 Thaco giới thiệu thế hệ thứ 4 dòng xe BMW X3 với dáng vẻ sang trọng mạnh mẽ, hiện tại 
+                  dòng xe này đang được bán với 3 phiên bản như sau: X3 sDrive20i, X3 xDrive20i M Sport và X3 xDrive30i M Sport.</p>
+                <img src="/Image/xeBMWX3-image.webp" class="image-carBMWX3">
+                <br>
+                <br>
+                <br>
+                <p>BMW X3 dùng chung khung gầm với xe 3-Series có thiết kế mạnh mẽ nam tính, được rất nhiều người trẻ tuổi ưa chuộng.</p>
+                <h4>Ưu điểm của xe BMW 7 Series</h4>
+                <ul>
+                  <li>Thiết kế sang trọng và đẳng cấp</li>
+                  <li>Tiện nghi hiện đại hàng đầu phân khúc</li>
+                  <li>Động cơ mạnh mẽ, vận hành êm ái, cách âm tốt</li>
+                  <li>Nhiều công nghệ an toàn tối tân</li>
+                </ul>
+                <h4>Nhược điểm của xe BMW 7 Series</h4>
+                <ul>
+                  <li>Thiết kế có hơi hướng thể thao, chưa thực sự phù hợp số đông khách hàng cao cấp</li>
+                </ul>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW X4</h2>
+              </div>
+              <div class="card-body">
+                <p>BMW X4 có kích thước tổng thể là 4752 x 1918 x 1621 mm, xe có thiết kế khá đặc trưng nổi bật nhất ở phần đâu xe là cụm lưới tản nhiệt 
+                  hình quả thận, cản trước kết hợp với đèn sương mù kéo dài thanh mảnh hơn thế hệ cũ làm cho chiếc xe đẹp lên khá nhiều.</p>
+                <img src="/Image/xeBMWX4-image.jpg" class="image-carBMWX4">
+                <br>
+                <br>
+                <p>Giá xe BMW X4 đang được niêm yết như sau:</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">Bảng giá xe xe BMW X4 tháng 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2022) hệ thống treo Adaptive, k đá cốp, k cảm ứng nút xoay điều khiển</td>
+                          <td class="text-center">2.909.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2022) hệ thống treo Adaptive, có đá cốp, k cảm ứng nút xoay điều khiển</td>
+                          <td class="text-center">2.899.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2023) hệ thống treo Adaptive</td>
+                          <td class="text-center">3.079.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X4 xDrive20i M Sport (2023) hệ thống treo M Sport</td>
+                          <td class="text-center">2.999.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW X5</h2>
+              </div>
+              <div class="card-body">
+                <img src="/Image/xeBMWX5-image.webp" class="image-carBMWX5">
+                <br>
+                <br>
+                <p>Giá bán của xe BMW X5 được bán cụ thể như sau</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">Bảng giá xe xe BMW X5 tháng 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine (2022) có cảm ứng nút xoay điều khiển, cam 360</td>
+                          <td class="text-center">3.519.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine (2022) k cảm ứng nút xoay điều khiển, cam 360</td>
+                          <td class="text-center">3.519.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine (2023) k cảm ứng nút xoay điều khiển, k cam 360</td>
+                          <td class="text-center">3.709.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X5 xDrive40i xLine LCI (2023) phiên bản mới, đầy đủ trang bị</td>
+                          <td class="text-center">4.159.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW X6</h2>
+              </div>
+              <div class="card-body">
+                <img src="/Image/xeBMWX6-image.jpg" class="image-carBMWX6">
+                <br>
+                <br>
+                <p>Giá xe BMW X6 đang được niêm yết như sau:</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">Bảng giá xe xe BMW X6 tháng 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">X6 xDrive40i M Sport 2022 (loa H&K, k đá cốp, k cảm ứng nút xoay điều khiển)</td>
+                          <td class="text-center">3.799.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X6 xDrive40i M Sport 2023 (loa H&K, có đã cốp, có cảm ứng nút xoay điều khiển)</td>
+                          <td class="text-center">4.459.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X6 xDrive40i M Sport 2022 (loa B&W, có đã cốp, da Merino, k cảm ứng nút xoay điều khiển)</td>
+                          <td class="text-center">4.465.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+
+              </div>
+              <div class="card-header text-black">
+                <h2>Giá xe BMW X7</h2>
+              </div>
+              <div class="card-body">
+                <p>Tháng 7/2019 hãng xe đến từ Đức đã đem chiếc BMW X7 giới thiệu đến thị trường ô tô tại Việt Nam, chiếc SUV sẽ là đối thủ đáng gờm của chiếc Lexus LX570 đến từ Nhật Bản.</p>
+                  <p>Chiếc xe có thiết kế sang trọng mạnh mẽ với hàng loạt công nghệ hiện đại nhất được tích hợp như hệ thống đèn chiếu sáng laser thông minh, tự động điều chỉnh góc chiếu, công nghệ 
+                    LED áp dụng cho đèn sương mù bà đèn hậu, phần thân nổi bật bởi bộ vành 22inch cách điệu hình chữ Y độc đáo. nội thất của chiếc xe sử dụng màu đen làm màu chủ đạo với các chi tiết 
+                    được ốp gỗ Ash Grain Silver Grey cao cấp, các hàng ghế đều chỉnh điện đồng thời hàng ghế trước còn tích hợp chức năng sưởi ấm, massage, nhớ vị trí lái.</p>
+                <img src="/Image/xeBMWX7-image.jpg" class="image-carBMWX7">
+                <br>
+                <br>
+                <p>Hệ thống giải trí nổi bật với màn hình 12,3 inch kết nối với Apple CarPlay  dàn âm thanh Bowers and Wilkins Diamond 20 loa, hàng ghế sau cũng được trang bị 
+                  màn hình 10,2 inch, điều hòa là dạng 5 vùng tự động, cửa sổ trời toàn cảnh panorama.</p>
+                <p>Giá xe BMW X7 đang được niêm yết như sau:</p>
+                <div class="container">
+                  <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th colspan="3"><h4 class="text-center">Bảng giá xe BMW X7 tháng 05/2024</h4></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2022) K cam 360, có cam lùi, k đánh lái bánh sau, k hệ thống treo Executive Pro</td>
+                          <td class="text-center">5.979.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2023) K cam 360, có cam lùi, k đánh lái bánh sau, k hệ thống treo Executive Pro</td>
+                          <td class="text-center">6.369.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2023) K cam 360, có cam lùi, có đánh lái bánh sau, có hệ thống treo Executive Pro</td>
+                          <td class="text-center">6.629.000.000</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">X7 xDrive40i PE (2023) Có cam 360, có đánh lái bánh sau, có hệ thống treo Executive Pro</td>
+                          <td class="text-center">6.699.000.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                <div class="card-header bg-dark">
+                  <h2 style="color: white">Tin bán xe BMW</h2>
+                </div>
+                <div id="carouselExampleIndicators-1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBmwX4xDrive20i.webp" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X4 xDrive20i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMW3series330i.webp" style="width: 300px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW 3 Series 330i M Sport-2023</h5>
+                            <p class="card-text">Lắp ráp trong nước, Ghi, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX3sDrive20i-2023.jpg">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X3 sDrive20i-2023</h5>
+                            <p class="card-text">Lắp ráp trong nước, Bạc, Máy xăng 2.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card-wrapper p-2">
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX7xDrive40iMSport-2023.webp" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X7 xDrive40i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Trắng, Máy xăng 3.0L, Số tự động,...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMWX7xDrive40i- 2023.jpg" style="height: 180px;width: 300px">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW X7 xDrive40i - 2023</h5>
+                            <p class="card-text">Nhập khẩu, Ghi, Máy xăng 3.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="image-wrapper">
+                            <img src="/Image/xeBMW7Series735iMSport-2023.png" style="width: 300px;height: 180px;">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">BMW 7 Series 735i M Sport-2023</h5>
+                            <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 3.0L, Số tự động...</p>
+                            <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                          </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeBMW3Series320iSportLineLCI2024.webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">BMW 3 Series 320i Sport Line LCI - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nươc, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeAudiA645TFSI.jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">BMW 5 Series 530i M Sport</h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 2.0L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+               </div>
+          </div>
+          <br>
+
+          <div class="card" style="width: 75rem;position: relative;left: 20rem;">
+            <div class="card" style="width: 72rem;">
+              <h5 class="card-header text-white bg-dark">Từ khóa liên quan</h5>
+              <div class="card-body">
+                <ul class="key-word">
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html">Giá xe Audi A4</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html">Giá xe Audi A6</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html">Giá xe Audi A7</a></li>
+                  <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html">Giá xe Audi A8</a></li>
+               </ul>
+               <ul class="key-word">
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html">Giá xe BMW X4</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html">Giá xe BMW X5</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html">Giá xe BMW X6</a></li>
+                  <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html">Giá xe BMW X7</a></li>
+               </ul>
+               <ul class="key-word">
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html">Giá xe Ford Everest</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html">Giá xe Ford Ranger</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html">Giá xe Ford Territory</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html">Giá xe Ford Transit</a></li>
+              </ul>
+              <ul class="key-word">
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCityChitiet.html">Giá xe Honda City</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCivicChitiet.html">Giá xe Honda Civic</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html">Giá xe Honda CRV</a></li>
+               <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaHRVChitiet.html">Giá xe Honda HRV</a></li>
+            </ul>
+              </div>
+            </div>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bảo mật</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+
+    <!-- Hide Navbar -->
+    <script>
+      $(document).ready(function() {
+          var previousScroll = 0;
+          $(window).scroll(function() {
+              var currentScroll = $(this).scrollTop();
+              if (currentScroll > previousScroll) {
+                  $(".navbar").slideUp();
+              } else {
+                  $(".navbar").slideDown();
+              }
+              previousScroll = currentScroll;
+          });
+      });
+      </script>
+
+</body>
+</html>

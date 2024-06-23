@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styleGiaxe/styleGiaxeHonda.css">
+    <title>Bảng giá ô tô</title>
+</head>
+<body class="bg-secondary">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/HTML/index.html">CHỢ XE CŨ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#search-car">Tìm mua ô tô</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/index.html#table-car">Bảng giá ô tô</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="userName" class="no-wrap"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-dark dropdown-menu-left" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Đơn xe bạn đã đặt</a>
+                    <div class="dropdown-divider"></div>
+                    <a id="logoutLink" class="dropdown-item" href="/Login/login.html">Đăng xuất</a>
+                  </div>
+                </li>
+              </ul>
+          </div>
+      </nav>
+          <div class="card" style="width: 19rem;height: 15rem;position: relative; top:80px;">
+            <div class="card-header text-white text-center bg-dark">
+              <h6>Bảng giá chi tiết các dòng xe Honda</h6>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html" class="list-group-item list-group-item-action">Giá xe Honda CRV</a>
+                <a href="" class="list-group-item list-group-item-action">Giá xe Honda City</a>
+                <a href="" class="list-group-item list-group-item-action">Giá xe Honda Civic</a>
+                <a href="" class="list-group-item list-group-item-action">Giá xe Honda HRV</a>
+              </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;top: -15rem;">
+              <div class="card-header text-black">
+                <h2>GIÁ XE Ô TÔ HONDA 2024: GIÁ LĂN BÁNH VÀ ƯU ĐÃI MỚI NHẤT</h2>
+              </div>
+                <div class="card-body">
+                  <p>Tháng 06/2024, Giá xe ô tô Honda 2024 đang được niêm yết dao động thấp nhất từ 529 triệu đồng cho Honda City và cao nhất 1,319 tỷ đồng cho 
+                    Honda Accord. Các dòng xe Honda cũng đang nhận được những chương trình ưu đãi hấp dẫn trong tháng.</p>
+                  <h2 class="text-black">Các dòng xe ô tô Honda</h2>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td><h4 class="text-center">Dòng xe</h4></td>
+                            <td><h4 class="text-center">Giá bán</h4></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda City</td>
+                            <td class="text-center">529.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic</td>
+                            <td class="text-center">730.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda CRV</td>
+                            <td class="text-center">998.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HRV</td>
+                            <td class="text-center">826.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  <h2 class="text-black">Bảng giá xe ô tô Honda</h2>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td><h4 class="text-center">Loại xe</h4></td>
+                            <td><h4 class="text-center">Dòng xe</h4></td>
+                            <td><h4 class="text-center">Giá thành</h4></td>
+                          </tr>
+                          <tr>
+                            <td rowspan="3" class="text-center">Honda City</td>
+                            <td class="text-center">City G</td>
+                            <td class="text-center">529.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">City L</td>
+                            <td class="text-center">569.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">City RS</td>
+                            <td class="text-center">599.000.000</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="6" class="text-center">Honda Civic</td>
+                            <td class="text-center">Civic RS (Trắng ngọc, đỏ)</td>
+                            <td class="text-center">875.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Civic RS (Đen ánh, Xám)</td>
+                            <td class="text-center">870.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Civic G (Trắng ngọc)</td>
+                            <td class="text-center">775.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Civic G (Đen ánh, xám, xanh)</td>
+                            <td class="text-center">770.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Civic E (Trắng ngọc)</td>
+                            <td class="text-center">735.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Civic E (Đen ánh, Xám)</td>
+                            <td class="text-center">730.000.000</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="4" class="text-center">Honda CR-V</td>
+                            <td class="text-center">CR-V LSE</td>
+                            <td class="text-center">1.138.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">CR-V L</td>
+                            <td class="text-center">1.118.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">CR-V G</td>
+                            <td class="text-center">1.048.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">CR-V E</td>
+                            <td class="text-center">998.000.000</td>
+                          </tr>
+                          <tr>
+                            <td rowspan="10" class="text-center">Honda HR-V</td>
+                            <td class="text-center">HR-V G</td>
+                            <td class="text-center">699.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">HR-V L</td>
+                            <td class="text-center">826.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">HR-V RS</td>
+                            <td class="text-center">871.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                 </div>
+                 <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Honda</h2>
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaHRVG-2024(white).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda HRV G - 2024 </h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCRVG-2024(white).webp" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda CRV G - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityRS1.5AT-2024(white).jpg">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityL1.5AT-2022(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City L 1.5 AT - 2022</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Thái Nguyên]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityRS1.5AT-2024(black).jpg" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đen, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCivicRS1.5AT-2024(red).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda Civic RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="card-wrapper p-2">
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaCityL1.5AT-2024(red).webp" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda City L 1.5 AT - 2024</h5>
+                                <p class="card-text">Lắp ráp trong nước, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                              </div>
+                            </div>
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaCRVeHEVRS-2023(black).jpg" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda CRV e: HEV RS - 2023</h5>
+                                <p class="card-text">Nhập khẩu, Đen, Xe hybrid 2.0L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Bình Dương]</small></p>
+                              </div>
+                            </div>
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaHRVG-2023(black).jpg" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda HRV G - 2023</h5>
+                                <p class="card-text">Nhập khẩu, Đen, Máy xăng 1.5L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Thái Nguyên]</small></p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+                 <br>
+                <div class="card-header text-black">
+                  <h2>Giá xe Honda City</h2>
+                </div>
+                <div class="card-body">
+                  <p>Honda City là một trong những mẫu xe được xem là "trụ cột" của thương hiệu xe Nhật Bản tại Việt Nam. Tham gia vào một trong những phân khúc xe 
+                    bán chạy bậc nhất tại Việt Nam hiện nay, nó được yêu thích nhờ hàng loạt ưu điểm như giá bán phù hợp với trang bị, thu hút ánh nhìn của mọi 
+                    khách hàng với dáng thiết kế thể thao, cảm giác lái tốt và an toàn đầy đủ.</p>
+                  <p>Honda City 2024 đang được phân phối với 3 phiên bản. Xe trang bị Động cơ 1.5L công suất 118Hp đi kèm hộp số tự động CVT. Mức tiêu thụ nhiên liệu 
+                    của xe vào khoảng 6 lít/ 100 km đường hỗn hợp trong và ngoài đô thị.</p>
+                  <img src="/Image/xeHondaCity2024-image.jpg" class="image-carHondaCity">
+                  <p>Giá xe Honda City 2024</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="3"><h4 class="text-center">Bảng giá xe Honda City 2024</h4></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">Phiên bản xe</th>
+                            <th class="text-center">Giá niêm yết</th>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda City G</td>
+                            <td class="text-center">529.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda City L</td>
+                            <td class="text-center">569.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda City RS</td>
+                            <td class="text-center">599.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  
+                </div>
+                <div class="card-header text-black">
+                  <h2>Giá xe Honda Civic</h2>
+                </div>
+                <div class="card-body">
+                  <p>Honda Civic, mẫu sedan hạng C mang trong mình hàng loạt ưu điểm vượt trội nổi tiếng với thiết kế trẻ trung, hiện đại và đậm chất 
+                    thể thao. Xe Thiết kế lịch lãm phù hợp với thị hiếu của đông đảo khách hàng, nhiều trang bị tiện nghi và trải nghiệm vận hành luôn được đánh giá cao.</p>
+                  <img src="/Image/xeHondaCivic2024-image.jpg" class="image-carHondaCivic">
+                  <br>
+                  <br>
+                  <br>
+                  <p>Giá xe Honda Civic mới:</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="3"><h4 class="text-center">Bảng giá xe Honda Civic 2024</h4></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">Phiên bản xe</th>
+                            <th class="text-center">Giá niêm yết</th>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic RS (Trắng ngọc / đỏ)</td>
+                            <td class="text-center">875.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic RS</td>
+                            <td class="text-center">870.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic G (Trắng ngọc / đỏ)</td>
+                            <td class="text-center">775.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic G</td>
+                            <td class="text-center">770.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic E (Trắng ngọc / đỏ)</td>
+                            <td class="text-center">735.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda Civic E</td>
+                            <td class="text-center">730.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+  
+                </div>
+                <div class="card-header text-black">
+                  <h2>Giá xe Honda HRV</h2>
+                </div>
+                <div class="card-body">
+                  <p>Xe Ô tô Honda HR-V là chiếc SUV đô thị lần đầu tiên được giới thiệu tại thị trường Nhật Bản vào năm 2014 và nhanh chóng trở thành 1 trong những sản phẩm thành công nhất của Honda.</p>
+                  <img src="/Image/xeHondaHRV2024-image.jpg" class="image-carHondaHRV">
+                  <br>
+                  <br>
+                  <br>
+                  <p>Giá xe Honda HR-V 2024:</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="2"><h4 class="text-center">Bảng giá xe Honda HRV 2024</h4></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="text-center">Phiên bản xe</th>
+                            <th class="text-center">Giá niêm yết</th>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V G 1.5 CVT (Đen, Xám)</td>
+                            <td class="text-center">699.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V G 1.5 CVT (Đỏ, Trắng)</td>
+                            <td class="text-center">704.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V L 1.5 CVT</td>
+                            <td class="text-center">826.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V L 1.5 CVT (Đỏ, Trắng ngọc)</td>
+                            <td class="text-center">831.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V RS 1.5 CVT</td>
+                            <td class="text-center">871.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda HR-V RS 1.5 CVT (Đỏ, Trắng ngọc, Trắng bạc)</td>
+                            <td class="text-center">876.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>  
+                </div>
+                <div class="card-header text-black">
+                  <h2>Giá xe Honda CRV</h2>
+                </div>
+                <div class="card-body">
+                  <p>Xe Ô tô Honda CR-V thường xuyên lọt top 10 cái tên có doanh số tốt nhất tháng và đôi khi còn giữ vị trí quán quân đầy tự hào. Chiếc SUV ghi điểm nhờ ngôn ngữ thiết kế đẹp mắt phù hợp với thị hiếu
+                     của khách hàng,  là mẫu xe gia đình, có không gian nội thất rộng rãi. bên cạnh đó là sự ổn định và bền bỉ tuyệt đối trong quá trình vận hành.</p>
+                  <img src="/Image/xeHondaCRV2024-image.webp" class="image-carHondaCRV">
+                  <br>
+                  <br>
+                  <br>
+                  <p>Giá xe Honda New CR-V 2024:</p>
+                  <div class="container">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th colspan="2"><h4 class="text-center">Bảng giá xe Honda CRV  2024</h4></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Phiên bản xe</td>
+                            <td class="text-center">Giá niêm yết</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda CRV LSE</td>
+                            <td class="text-center">1.138.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda CRV L</td>
+                            <td class="text-center">1.118.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda CRV G</td>
+                            <td class="text-center">1.048.000.000</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Honda CRV E</td>
+                            <td class="text-center">998.000.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+                <div class="card" style="width: 69rem;position: relative;left: 30px;">
+                  <div class="card-header bg-dark">
+                    <h2 style="color: white">Tin bán xe Honda</h2>
+                  </div>
+                  <div id="carouselExampleIndicators-1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaHRVG-2024(white).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda HRV G - 2024 </h5>
+                              <p class="card-text">Nhập khẩu, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCRVG-2024(white).webp" style="width: 300px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda CRV G - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityRS1.5AT-2024(white).jpg">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card-wrapper p-2">
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityL1.5AT-2022(white).jpg" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City L 1.5 AT - 2022</h5>
+                              <p class="card-text">Lắp ráp trong nước, Trắng, Máy xăng 1.5L, Số tự động,...</p>
+                              <p class="card-text"><small class="text-muted">[Thái Nguyên]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCityRS1.5AT-2024(black).jpg" style="height: 180px;width: 300px">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda City RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Lắp ráp trong nước, Đen, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                            </div>
+                          </div>
+                          <div class="card text-center">
+                            <div class="image-wrapper">
+                              <img src="/Image/xeHondaCivicRS1.5AT-2024(red).webp" style="width: 300px;height: 180px;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Honda Civic RS 1.5 AT - 2024</h5>
+                              <p class="card-text">Nhập khẩu, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                              <p class="card-text"><small class="text-muted">[TP.HCM]</small></p>
+                            </div>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="card-wrapper p-2">
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaCityL1.5AT-2024(red).webp" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda City L 1.5 AT - 2024</h5>
+                                <p class="card-text">Lắp ráp trong nước, Đỏ, Máy xăng 1.5L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Hà Nội]</small></p>
+                              </div>
+                            </div>
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaCRVeHEVRS-2023(black).jpg" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda CRV e: HEV RS - 2023</h5>
+                                <p class="card-text">Nhập khẩu, Đen, Xe hybrid 2.0L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Bình Dương]</small></p>
+                              </div>
+                            </div>
+                            <div class="card text-center">
+                              <div class="image-wrapper">
+                                <img src="/Image/xeHondaHRVG-2023(black).jpg" style="width: 300px;height: 180px;">
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Honda HRV G - 2023</h5>
+                                <p class="card-text">Nhập khẩu, Đen, Máy xăng 1.5L, Số tự động...</p>
+                                <p class="card-text"><small class="text-muted">[Thái Nguyên]</small></p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                 </div>
+            </div>
+            <div class="card" style="width: 75rem;position: relative;left: 20rem;">
+              <div class="card" style="width: 72rem;">
+                <h5 class="card-header text-white bg-dark">Từ khóa liên quan</h5>
+                <div class="card-body">
+                  <ul class="key-word">
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA4Chitiet.html">Giá xe Audi A4</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA6Chitiet.html">Giá xe Audi A6</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA7Chitiet.html">Giá xe Audi A7</a></li>
+                    <li class="key-word-Audi"><a href="/HTML/BangGia/GiaxeChitiet/giaxeAudiA8Chitiet.html">Giá xe Audi A8</a></li>
+                 </ul>
+                 <ul class="key-word">
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX4Chitiet.html">Giá xe BMW X4</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX5Chitiet.html">Giá xe BMW X5</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX6Chitiet.html">Giá xe BMW X6</a></li>
+                    <li class="key-word-BMW"><a href="/HTML/BangGia/GiaxeChitiet/giaxeBMWX7Chitiet.html">Giá xe BMW X7</a></li>
+                 </ul>
+                 <ul class="key-word">
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordEverestChitiet.html">Giá xe Ford Everest</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordRangerChitiet.html">Giá xe Ford Ranger</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTerritoryChitiet.html">Giá xe Ford Territory</a></li>
+                   <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeFordTransitChitiet.html">Giá xe Ford Transit</a></li>
+                </ul>
+                <ul class="key-word">
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCityChitiet.html">Giá xe Honda City</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCivicChitiet.html">Giá xe Honda Civic</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaCRVChitiet.html">Giá xe Honda CRV</a></li>
+                 <li class="key-word-Ford"><a href="/HTML/BangGia/GiaxeChitiet/giaxeHondaHRVChitiet.html">Giá xe Honda HRV</a></li>
+              </ul>
+                </div>
+              </div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/HTML/index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bảo mật</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- From login -->
+    <script type="module" src="/JavaScript/Login/login.js"></script> 
+
+    <!-- Hide Navbar -->
+    <script>
+      $(document).ready(function() {
+          var previousScroll = 0;
+          $(window).scroll(function() {
+              var currentScroll = $(this).scrollTop();
+              if (currentScroll > previousScroll) {
+                  $(".navbar").slideUp();
+              } else {
+                  $(".navbar").slideDown();
+              }
+              previousScroll = currentScroll;
+          });
+      });
+      </script>
+</body>
+</html>

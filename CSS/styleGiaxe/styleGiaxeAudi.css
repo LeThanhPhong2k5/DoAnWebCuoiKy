@@ -1,0 +1,137 @@
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    margin: 0 1em;
+    width: calc(100%/3);
+}
+
+.image-wrapper img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.image-wrapper {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-carAudiA4{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiA6{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiA7{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiA8{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ3{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ5{
+    margin-left: 10rem;
+    width: 50rem;
+}
+.image-carAudiQ7{
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ8{
+    margin-left: 10rem;
+    width: 50rem;
+}
+.nav-link a{
+    color: white;
+}
+
+.image-carAudiA42024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiA62024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+.image-carAudiA72024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+.image-carAudiA82024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+.image-carAudiQ32024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ52024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ72024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+.image-carAudiQ82024 {
+    margin-left: 10rem;
+    width: 50rem;
+}
+
+/* Từ khóa liên quan */
+
+.key-word {
+    display: table; 
+    width: 100%; 
+    border-collapse: collapse;
+    position:relative;
+    left: 40px;
+}
+
+.key-word li {
+    display: table-cell; 
+    padding: 10px; 
+    border: none;
+}
+
+.key-word a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Chặn xuống dòng */
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* dropdown logout */
+
+.dropdown-menu {
+    position: absolute;
+    right:0px;
+    top: 47px;
+    border-radius:0;
+}
